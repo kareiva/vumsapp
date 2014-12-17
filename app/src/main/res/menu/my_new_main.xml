@@ -1,0 +1,17 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="app.sunshine.android.example.com.sunshine.MyNewMain" >
+
+    <item android:id="@+id/action_map"
+        android:title="@string/action_map"
+        android:orderInCategory="3"
+        app:showAsAction="never" />
+
+    <item android:id="@+id/action_about"
+        android:title="@string/title_activity_about"
+        android:orderInCategory="4"
+        app:showAsAction="never" />
+
+</menu>
+<!-- From: file:/C:/Users/P/Desktop/Sunshine/app/src/main/res/menu/my_new_main.xml -->

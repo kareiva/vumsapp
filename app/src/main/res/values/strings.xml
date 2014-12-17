@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--
+     Used in Action Bar, and in AndroidManifest to tell the device the name of this app.
+     It's to keep this short, so your launcher icon isn't displayed with "The greatest Wea"
+     or something similar.
+    -->
+    <string name="app_name">VU Weather</string>
+    <!--
+     By convention, "action" denotes that this String will be used as the label for an Action,
+     typically from the action bar.  The ActionBar is limited real estate, so shorter is better.
+    -->
+    <!-- Menu label to fetch updated weather info from the server -->
+    <string name="action_refresh">Refresh</string>
+    <string name="title_activity_about">About</string>
+    <string name="mif_linkas">http://mif.vu.lt/en2/</string>
+    <string name="vu_linkas">http://www.vu.lt/en</string>
+    <string name="apie_tekstas">Application was developed by Vilnius University students of Mathematics and Informatics faculty:</string>
+    <string name="title_activity_VUabout">VU MS Info</string>
+    <string name="title_activity_stoties">About VU Meteorological Station</string>
+    <string name="stotis">Weather station</string>
+    <string name="apie_stoti">This modern weather station is operated by Vilnius University. Station equipment is manufactured by Coastal Environmental Systems and Kipp &#38; Zonen.</string>
+    <string name="koord">Location:\n54° 40′ 58.39″ N\n25° 15′ 38.23″ E</string>
+    <string name="AVJL">128 m. above sea level (ASL)</string>
+    <string name="adres">Address:\nM. K. Čiurlionio st. 21/27, Vilnius, LT 03101</string>
+    <string name="moreinf">More information</string>
+    <string name="istotilink">http://www.hkk.gf.vu.lt/?page_id=687</string>
+    <!-- Label fir the location preference [CHAR LIMIT=30] -->
+    <string name="pref_location_label">Location</string>
+    <!-- Key name for storing location in SharedPreferences [CHAR LIMIT=NONE] -->
+    <string name="pref_location_key">location</string>
+    <!-- Default postal code for location preference [CHAR LIMIT=NONE] -->
+    <string name="pref_location_default">Vilnius</string>
+    <!-- false reiskia kad nebus translate -->
+    <string name="action_map">Map location</string>
+    <string name="title_activity_vudata">VU MS DATA</string>
+
+    <string name="action_fresh">Refresh</string>
+    <string name="title_activity_my_new_main">MyNewMain</string>
+    <string name="title_section1">Section 1</string>
+    <string name="title_section2">Section 2</string>
+    <string name="title_section3">Section 3</string>
+
+    <string name="title_activity_no_internet">NoInternet</string>
+
+    <string name="title_activity_vudatapaaiskinimai">More data with explanations</string>
+    <string name="title_activity_meteo">meteoActivity</string>
+    <string name="title_activity_meteo_fragment">meteoFragment</string>
+
+    <string name="daugiau">Details</string>
+    <string name="nerarysio">No Internet Connection Availabe</string>
+    <string name="ispejimasinterneto">WARNING</string>
+    <string name="wireless">WIRELESS SETTINGS</string>
+    <string name="notifikacija">Information about the weather in Vilnius</string>
+    <string name="meteoatnaujinta">Weather forecast provided by meteo.lt. Updated: </string>
+    <string name="temperatura">Temperature: </string>
+    <string name="vejogreitis">Wind speed: </string>
+    <string name="debesuotumas">Cloudiness: </string>
+    <string name="slegis">Pressure: </string>
+    <string name="krituliai">Precipation: </string>
+    <string name="giedra">Clear</string>
+    <string name="mazaidebesuota">Mostly clear</string>
+    <string name="debesuotasupragiedruliais">Partly Sunny</string>
+    <string name="debesuota">Cloudy</string>
+    <string name="protarpiaislietus">Intermittent rain</string>
+    <string name="silpnaslietus">Light rain</string>
+    <string name="lietus">Rain</string>
+    <string name="smarkuslietus">Heavy rain</string>
+    <string name="krusa">Hail</string>
+    <string name="slapdriba">Sleet</string>
+    <string name="perkunija">Thunderstorm</string>
+    <string name="trumpaslietussuperkunija">Short rain with thunder</string>
+    <string name="lietussuperkunija">Rain and thunder</string>
+    <string name="trumpalaikissnygis">Brief snow</string>
+    <string name="protarpiaissniegas">Intermittent snow</string>
+    <string name="silpnassnygis">Light snow</string>
+    <string name="snygis">Snow</string>
+    <string name="smarkussnygis">Heavy snow</string>
+    <string name="Rūkas">Fog</string>
+    <string name="lijundra">Freezing rain</string>
+    <string name="plikledis">Glazed frost</string>
+    <string name="trumpalaikislietus">Short rain</string>
+    <string name="siandien">Today: </string>
+    <string name="ryt">Tomorrow: </string>
+    <string name="alpha">(In Alphabetical Order)\nIndrė Cibulskaitė - Style\nMartynas Raila - Programming\nPaulius Taujanskas - Lead Programming\n \nLaimonas Januška - Scientific Worker\nSimonas Kareiva - Executive Lecturer </string>
+    <string name="tiesiogvums">Live data from Vilnius University. Updated: </string>
+    <string name="migla">Mist </string>
+    <string name="migla1km">Mist, visibility less than 1 km</string>
+    <string name="silpnadulksna">Light Drizzle</string>
+    <string name="vidutinedulksna">Average Drizzle</string>
+    <string name="stipridulksna">Strong Drizzle</string>
+    <string name="vidutinislietus">Moderate Rain</string>
+    <string name="stipruslietus">Heavy Rain</string>
+    <string name="vidutinissnygis">Average Snow</string>
+    <string name="stiprussnygis">Heavy Snow</string>
+    <string name="liutiniaikrituliai">Rainfall</string>
+    <string name="dekojame">Special thanks to: Laimonas Januška and Simonas Kareiva</string>
+</resources>

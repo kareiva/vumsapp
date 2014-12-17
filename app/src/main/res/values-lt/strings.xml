@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--
+     Used in Action Bar, and in AndroidManifest to tell the device the name of this app.
+     It's to keep this short, so your launcher icon isn't displayed with "The greatest Wea"
+     or something similar.
+    -->
+    <string name="app_name">VU Orai</string>
+    <!--
+     By convention, "action" denotes that this String will be used as the label for an Action,
+     typically from the action bar.  The ActionBar is limited real estate, so shorter is better.
+    -->
+
+    <string name="action_notification">Notifikacinis pranešimas</string>
+    <string name="title_activity_notification">Notifikacinis pranešimas</string>
+    <string name="action_fresh">Atnaujinti</string>
+
+    <!-- Menu label to fetch updated weather info from the server -->
+    <string name="action_refresh" translatable="false">Atnaujinti</string>
+    <string name="title_activity_detail">Detali informacija</string>
+
+    <string name="title_activity_about">Apie</string>
+
+    <string name="mif_linkas">http://mif.vu.lt</string>
+    <string name="vu_linkas">http://www.vu.lt</string>
+    <string name="apie_tekstas">Programą sukūrė Vilniaus Universiteto Matematikos ir Informatikos fakulteto Studentai:</string>
+
+    <string name="title_activity_VUabout">Apie VU stotį</string>
+    <string name="title_activity_stoties">About VU meteorological station</string>
+    <string name="stotis">Meteorologijos stotis</string>
+    <string name="apie_stoti">Ši modernia orų stotį valdo Vilniaus Universitetas. Stoties įranga pagamino Coastal Environmental Systems Kipp &#38; Zonen</string>
+    <string name="koord">Koordinatės\n54° 40′ 58.39″ š. pl.,\n25° 15′ 38.23″ r. ilg.</string>
+    <string name="AVJL">Aukštis virš jūros lygio\n128 m</string>
+    <string name="adres">Adresas\nM. K. Čiurlionio g. 21/27, Vilnius, LT 03101</string>
+    <string name="moreinf">Daugiau informacijos</string>
+    <string name="istotilink">http://www.hkk.gf.vu.lt/?page_id=687</string>
+
+    <string name="title_activity_vudatapaaiskinimai">Daugiau reikšmių su paaiškinimais</string>
+
+    <!-- Label fir the location preference [CHAR LIMIT=30] -->
+    <string name="pref_location_label">Vieta</string>
+
+    <!-- Key name for storing location in SharedPreferences [CHAR LIMIT=NONE] -->
+    <string name="pref_location_key" translatable="false">Vieta</string>
+
+    <!-- Default postal code for location preference [CHAR LIMIT=NONE] -->
+    <string name="pref_location_default">Vilnius</string>
+    <string name="action_map">Vieta žemėlapyje</string>
+    <string name="daugiau">Detaliau</string>
+    <string name="nerarysio">Nėra Interneto Ryšio</string>
+    <string name="ispejimasinterneto">Įspėjimas</string>
+    <string name="wireless">Belaidžio Tinklo Nustatymai</string>
+    <string name="notifikacija">Informacija apie orus Vilniuje</string>
+    <string name="meteoatnaujinta">Orų prognozę suteikia meteo.lt. Atnaujinta: </string>
+    <string name="temperatura">Temperatūra: </string>
+    <string name="vejogreitis">Vėjo greitis: </string>
+    <string name="debesuotumas">Debesuotumas: </string>
+    <string name="slegis">Slėgis: </string>
+    <string name="krituliai">Krituliai: </string>
+    <string name="giedra">Giedra</string>
+    <string name="mazaidebesuota">Mažai debesuota</string>
+    <string name="debesuotasupragiedruliais">Debesuota su pragiedruliais</string>
+    <string name="debesuota">Debesuota</string>
+    <string name="protarpiaislietus">Protarpiais lietus</string>
+    <string name="silpnaslietus">Silpnas lietus</string>
+    <string name="lietus">Lietus</string>
+    <string name="smarkuslietus">Smarkus lietus</string>
+    <string name="krusa">Kruša</string>
+    <string name="slapdriba">Šlapdriba</string>
+    <string name="perkunija">Perkūnija</string>
+    <string name="trumpaslietussuperkunija">Trumpalaikis lietus su perkūnija</string>
+    <string name="lietussuperkunija">Lietus su perkūnija</string>
+    <string name="trumpalaikissnygis">Trumpalaikis snygis</string>
+    <string name="protarpiaissniegas">Protarpiais sniegas</string>
+    <string name="silpnassnygis">Silpnas snygis</string>
+    <string name="snygis">Snygis</string>
+    <string name="smarkussnygis">Smarkus snygis</string>
+    <string name="Rūkas">Rūkas</string>
+    <string name="lijundra">Lijundra</string>
+    <string name="plikledis">Plikledis</string>
+    <string name="trumpalaikislietus">Trumpalaikis lietus</string>
+    <string name="siandien">Šiandien: </string>
+    <string name="ryt">Rytoj: </string>
+    <string name="tiesiogvums">Tiesioginiai duomenys iš Vilniaus Universiteto. Atnaujinta: </string>
+    <string name="migla">Migla</string>
+    <string name="migla1km">Migla, mažas matomumas</string>
+    <string name="silpnadulksna">Silpna dulksna</string>
+    <string name="vidutinedulksna">Vidutinė dulksna</string>
+    <string name="stipridulksna">Stipri dulksna</string>
+    <string name="vidutinislietus">Vidutinis lietus</string>
+    <string name="stipruslietus">Stiprus lietus</string>
+    <string name="vidutinissnygis">Vidutinis snygis</string>
+    <string name="stiprussnygis">Stiprus snygis</string>
+    <string name="liutiniaikrituliai">Liūtiniai krituliai</string>
+    <string name="alpha">(Abėcėlės tvarka)\nIndrė Cibulskaitė - Stilius\nMartynas Raila - Programamuotojas\nPaulius Taujanskas - Pagrindinis Programuotojas\n \nDėkojame:\nLaimonas Januška - Mokslo Darbuotojas\nSimonas Kareiva - Vykdantysis Dėstytojas </string>
+
+
+</resources>

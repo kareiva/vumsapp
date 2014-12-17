@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="app.vilniusweather.android.project.com.vilniusweather" >
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:debuggable="true"
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".AboutActivity"
+            android:label="@string/title_activity_about"
+            android:parentActivityName=".MyNewMain"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="app.vilniusweather.android.project.com.vilniusweather.MyNewMain" />
+        </activity>
+        <activity
+            android:name=".MyNewMain"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".vudatapaaiskinimai"
+            android:label="@string/title_activity_vudatapaaiskinimai"
+            android:parentActivityName=".MyNewMain"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="app.vilniusweather.android.project.com.vilniusweather.MyNewMain" />
+        </activity>
+        <activity
+            android:name=".meteoActivity"
+            android:label="@string/title_activity_meteo"
+            android:parentActivityName=".MyNewMain"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="app.vilniusweather.android.project.com.vilniusweather.MyNewMain" />
+        </activity>
+        <activity
+            android:name=".meteoFragment"
+            android:label="@string/title_activity_meteo_fragment"
+            android:parentActivityName=".MyNewMain"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="app.vilniusweather.android.project.com.vilniusweather.MyNewMain" />
+        </activity>
+    </application>
+</manifest>

@@ -1,0 +1,146 @@
+<RelativeLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/vudata">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Tiesioginiai duomenys is Vilniaus Universiteteo. Atnaujinta 2014-*05-05 17:45"
+        android:id="@+id/textView"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:gravity="right"
+        android:textSize="12dp"
+        android:textStyle="bold|italic" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="LARGE"
+        android:id="@+id/textView4"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:visibility="invisible" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/daugiau"
+        android:id="@+id/buttonExtended"
+        android:layout_marginBottom="57dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="-99,9 OC"
+        android:id="@+id/reiksme1"
+        android:layout_marginTop="101dp"
+        android:textColor="#ffffffff"
+        android:gravity="center"
+        android:textSize="30dp"
+        android:layout_toEndOf="@+id/buttonExtended"
+        android:layout_below="@+id/textView4"
+        android:layout_alignLeft="@+id/buttonExtended"
+        android:layout_alignStart="@+id/buttonExtended"
+        android:layout_marginLeft="98dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:src="@drawable/giedra_saule"
+        android:layout_toEndOf="@+id/textView4"
+        android:layout_toStartOf="@+id/reiksme1"
+        android:layout_alignRight="@+id/buttonExtended"
+        android:layout_alignEnd="@+id/buttonExtended"
+        android:layout_marginRight="25dp"
+        android:layout_above="@+id/buttonExtended"
+        android:layout_marginLeft="49dp"
+        android:layout_marginBottom="343dp"
+        android:layout_below="@+id/textView4"
+        android:layout_alignLeft="@+id/reiksme2"
+        android:layout_alignStart="@+id/reiksme2"
+        android:layout_marginTop="90dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:id="@+id/reiksme5"
+        android:layout_marginTop="118dp"
+        android:gravity="center|top"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:textIsSelectable="false"
+        android:text="Giedra"
+        android:layout_below="@+id/reiksme1"
+        android:layout_alignRight="@+id/reiksme1"
+        android:layout_alignEnd="@+id/reiksme1"
+        android:layout_marginRight="51dp"
+        android:layout_marginBottom="71dp"
+        android:layout_alignLeft="@+id/imageView"
+        android:layout_alignStart="@+id/imageView"
+        android:layout_marginLeft="17dp"
+        android:layout_above="@+id/reiksme2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Slėgis: 9999.9 hPa"
+        android:id="@+id/reiksme2"
+        android:layout_toEndOf="@+id/textView4"
+        android:layout_marginBottom="129dp"
+        android:gravity="center"
+        android:textSize="27dp"
+        android:layout_above="@+id/buttonExtended"
+        android:layout_toStartOf="@+id/buttonExtended"
+        android:layout_toRightOf="@+id/textView4"
+        android:layout_marginLeft="27dp"
+        android:layout_alignRight="@+id/reiksme1"
+        android:layout_alignEnd="@+id/reiksme1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Vėjo greitis: 30.1 kts"
+        android:id="@+id/reiksme3"
+        android:layout_marginBottom="47dp"
+        android:gravity="center"
+        android:textSize="27dp"
+        android:layout_above="@+id/buttonExtended"
+        android:layout_toStartOf="@+id/buttonExtended"
+        android:layout_alignLeft="@+id/reiksme2"
+        android:layout_alignStart="@+id/reiksme2"
+        android:layout_marginRight="17dp"
+        android:layout_alignRight="@+id/reiksme5"
+        android:layout_alignEnd="@+id/reiksme5" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView2"
+        android:layout_toEndOf="@+id/imageView"
+        android:src="@drawable/sv"
+        android:layout_alignBottom="@+id/reiksme3"
+        android:layout_alignTop="@+id/reiksme2"
+        android:layout_marginTop="69dp"
+        android:layout_toRightOf="@+id/imageView"
+        android:layout_marginLeft="33dp"
+        android:layout_alignRight="@+id/reiksme2"
+        android:layout_alignEnd="@+id/reiksme2"
+        android:layout_marginRight="18dp" />
+
+</RelativeLayout>

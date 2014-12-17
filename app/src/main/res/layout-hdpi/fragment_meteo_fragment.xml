@@ -1,0 +1,270 @@
+<RelativeLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/meteo">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Atnaujinta"
+        android:id="@+id/textView"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:gravity="right"
+        android:textSize="11dp"
+        android:textStyle="bold|italic" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:layout_marginLeft="21dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="185dp"
+        android:layout_marginBottom="299dp"
+        android:src="@drawable/giedra_saule"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/Day1"
+        android:layout_marginTop="13dp"
+        android:layout_alignParentBottom="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/siandien"
+        android:id="@+id/Day1"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="17dp"
+        android:layout_marginLeft="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/ryt"
+        android:id="@+id/Day2"
+        android:layout_below="@+id/reiksme5"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="28dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="20dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView2"
+        android:layout_alignLeft="@+id/imageView"
+        android:layout_alignStart="@+id/imageView"
+        android:src="@drawable/giedra_saule"
+        android:layout_marginBottom="89dp"
+        android:layout_alignRight="@+id/imageView"
+        android:layout_alignEnd="@+id/imageView"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/Day2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Giedra"
+        android:id="@+id/reiskinys2"
+        android:layout_toStartOf="@+id/reiksme44"
+        android:textSize="16dp"
+        android:layout_toLeftOf="@+id/reiksme44"
+        android:layout_alignLeft="@+id/imageView2"
+        android:layout_alignStart="@+id/imageView2"
+        android:gravity="center|top"
+        android:layout_alignTop="@+id/reiksme44"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="37dp"
+        android:textStyle="bold" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="-99,9 OC"
+        android:id="@+id/reiksme11"
+        android:layout_toEndOf="@+id/imageView2"
+        android:layout_alignTop="@+id/imageView2"
+        android:layout_toRightOf="@+id/imageView2"
+        android:layout_alignRight="@+id/reiksme4"
+        android:layout_alignEnd="@+id/reiksme4"
+        android:textSize="16dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Vejo greitis: 100 m/s "
+        android:id="@+id/reiksme22"
+        android:layout_below="@+id/reiksme11"
+        android:layout_alignLeft="@+id/reiksme5"
+        android:layout_alignStart="@+id/reiksme5"
+        android:layout_alignRight="@+id/reiksme33"
+        android:layout_alignEnd="@+id/reiksme33"
+        android:textSize="16dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/vejas2"
+        android:src="@drawable/sv"
+        android:layout_below="@+id/reiksme22"
+        android:layout_toRightOf="@+id/imageView2"
+        android:layout_toEndOf="@+id/imageView2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Debesuotumas: 100%"
+        android:id="@+id/reiksme33"
+        android:layout_toEndOf="@+id/imageView2"
+        android:layout_below="@+id/vejas2"
+        android:layout_toRightOf="@+id/imageView2"
+        android:layout_alignRight="@+id/textView2"
+        android:layout_alignEnd="@+id/textView2"
+        android:layout_marginRight="10dp"
+        android:textSize="16dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Slėgis: 1029.3 hPa"
+        android:id="@+id/reiksme44"
+        android:layout_toEndOf="@+id/imageView2"
+        android:layout_below="@+id/reiksme33"
+        android:layout_toRightOf="@+id/imageView2"
+        android:layout_alignRight="@+id/reiksme33"
+        android:layout_alignEnd="@+id/reiksme33"
+        android:textSize="16dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Krituliai: 99,9 mm"
+        android:id="@+id/reiksme55"
+        android:layout_toEndOf="@+id/textView5"
+        android:layout_below="@+id/reiksme44"
+        android:layout_alignLeft="@+id/reiksme22"
+        android:layout_alignStart="@+id/reiksme22"
+        android:layout_alignRight="@+id/reiksme44"
+        android:layout_alignEnd="@+id/reiksme44"
+        android:textSize="16dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="-99,9 OC"
+        android:id="@+id/reiksme1"
+        android:layout_alignTop="@+id/imageView"
+        android:layout_alignRight="@+id/reiksme22"
+        android:layout_alignEnd="@+id/reiksme22"
+        android:textSize="16dp"
+        android:layout_alignLeft="@+id/vejas1"
+        android:layout_alignStart="@+id/vejas1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Vejo greitis: 100 m/s "
+        android:id="@+id/reiksme2"
+        android:layout_below="@+id/reiksme1"
+        android:textSize="16dp"
+        android:layout_alignLeft="@+id/reiksme1"
+        android:layout_alignStart="@+id/reiksme1"
+        android:layout_alignRight="@+id/reiksme1"
+        android:layout_alignEnd="@+id/reiksme1" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/vejas1"
+        android:src="@drawable/sv"
+        android:layout_below="@+id/reiksme2"
+        android:layout_alignLeft="@+id/vejas2"
+        android:layout_alignStart="@+id/vejas2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Debesuotumas: 100%"
+        android:id="@+id/reiksme3"
+        android:layout_below="@+id/vejas1"
+        android:textSize="16dp"
+        android:layout_alignLeft="@+id/vejas1"
+        android:layout_alignStart="@+id/vejas1"
+        android:layout_alignRight="@+id/reiksme33"
+        android:layout_alignEnd="@+id/reiksme33" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Slėgis: 1029.3 hPa"
+        android:id="@+id/reiksme4"
+        android:layout_below="@+id/reiksme3"
+        android:layout_alignLeft="@+id/reiksme3"
+        android:layout_alignStart="@+id/reiksme3"
+        android:textSize="16dp"
+        android:layout_alignRight="@+id/reiksme33"
+        android:layout_alignEnd="@+id/reiksme33" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Krituliai: 99,9 mm"
+        android:id="@+id/reiksme5"
+        android:layout_below="@+id/reiksme4"
+        android:layout_alignLeft="@+id/reiksme4"
+        android:layout_alignStart="@+id/reiksme4"
+        android:layout_alignRight="@+id/reiksme33"
+        android:layout_alignEnd="@+id/reiksme33"
+        android:textSize="16dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="HDPI"
+        android:id="@+id/textView2"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:visibility="invisible" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Migla"
+        android:id="@+id/reiskinys1"
+        android:layout_alignLeft="@+id/Day2"
+        android:layout_alignStart="@+id/Day2"
+        android:layout_toLeftOf="@+id/reiksme3"
+        android:layout_toStartOf="@+id/reiksme3"
+        android:layout_marginBottom="28dp"
+        android:layout_alignBottom="@+id/Day2"
+        android:layout_below="@+id/reiksme3"
+        android:gravity="top|center"
+        android:textStyle="bold"
+        android:textSize="16dp" />
+
+</RelativeLayout>
