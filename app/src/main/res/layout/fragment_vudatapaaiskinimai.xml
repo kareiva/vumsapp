@@ -23,7 +23,7 @@
                 android:id="@+id/p1"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec magna sapien, tincidunt eget lectus nec, ullamcorper viverra diam. Integer elementum risus leo, eu molestie odio efficitur et. Phasellus vitae volutpat felis, sollicitudin pharetra nunc. Aliquam convallis lectus quis mauris vulputate, id molestie metus ultrices. Vestibulum quis est diam. Suspendisse posuere." >
+                android:text="@string/temperaturapa" >
             </TextView>
             <TextView
                 android:id="@+id/reiksme2"
@@ -36,7 +36,7 @@
                 android:id="@+id/p1"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec magna sapien, tincidunt eget lectus nec, ullamcorper viverra diam. Integer elementum risus leo, eu molestie odio efficitur et. Phasellus vitae volutpat felis, sollicitudin pharetra nunc. Aliquam convallis lectus quis mauris vulputate, id molestie metus ultrices. Vestibulum quis est diam. Suspendisse posuere." >
+                android:text="@string/santykinisorodregnispa" >
             </TextView>
             <TextView
                 android:id="@+id/reiksme3"
@@ -49,7 +49,7 @@
                 android:id="@+id/p1"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec magna sapien, tincidunt eget lectus nec, ullamcorper viverra diam. Integer elementum risus leo, eu molestie odio efficitur et. Phasellus vitae volutpat felis, sollicitudin pharetra nunc. Aliquam convallis lectus quis mauris vulputate, id molestie metus ultrices. Vestibulum quis est diam. Suspendisse posuere." >
+                android:text="@string/atmosferosslegistotieslygyjepa" >
             </TextView>
             <TextView
                 android:id="@+id/reiksme4"
@@ -62,7 +62,7 @@
                 android:id="@+id/p1"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec magna sapien, tincidunt eget lectus nec, ullamcorper viverra diam. Integer elementum risus leo, eu molestie odio efficitur et. Phasellus vitae volutpat felis, sollicitudin pharetra nunc. Aliquam convallis lectus quis mauris vulputate, id molestie metus ultrices. Vestibulum quis est diam. Suspendisse posuere." >
+                android:text="@string/krituliukiekiosumapereinamaparapa" >
             </TextView>
             <TextView
                 android:id="@+id/reiksme5"
@@ -75,7 +75,7 @@
                 android:id="@+id/p1"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec magna sapien, tincidunt eget lectus nec, ullamcorper viverra diam. Integer elementum risus leo, eu molestie odio efficitur et. Phasellus vitae volutpat felis, sollicitudin pharetra nunc. Aliquam convallis lectus quis mauris vulputate, id molestie metus ultrices. Vestibulum quis est diam. Suspendisse posuere." >
+                android:text="@string/vejogreitispa" >
             </TextView>
             <TextView
                 android:id="@+id/reiksme6"
@@ -88,7 +88,7 @@
                 android:id="@+id/p1"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec magna sapien, tincidunt eget lectus nec, ullamcorper viverra diam. Integer elementum risus leo, eu molestie odio efficitur et. Phasellus vitae volutpat felis, sollicitudin pharetra nunc. Aliquam convallis lectus quis mauris vulputate, id molestie metus ultrices. Vestibulum quis est diam. Suspendisse posuere." >
+                android:text="@string/vejokryptis" >
             </TextView>
             <TextView
                 android:id="@+id/reiksme7"
@@ -101,7 +101,7 @@
                 android:id="@+id/p1"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec magna sapien, tincidunt eget lectus nec, ullamcorper viverra diam. Integer elementum risus leo, eu molestie odio efficitur et. Phasellus vitae volutpat felis, sollicitudin pharetra nunc. Aliquam convallis lectus quis mauris vulputate, id molestie metus ultrices. Vestibulum quis est diam. Suspendisse posuere." >
+                android:text="@string/vejogusiostiprumaspa" >
             </TextView>
             <TextView
                 android:id="@+id/reiksme8"
@@ -114,7 +114,7 @@
                 android:id="@+id/p1"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec magna sapien, tincidunt eget lectus nec, ullamcorper viverra diam. Integer elementum risus leo, eu molestie odio efficitur et. Phasellus vitae volutpat felis, sollicitudin pharetra nunc. Aliquam convallis lectus quis mauris vulputate, id molestie metus ultrices. Vestibulum quis est diam. Suspendisse posuere." >
+                android:text="@string/debesupadoaukstispa" >
             </TextView>
             <TextView
                 android:id="@+id/reiksme9"
@@ -127,7 +127,7 @@
                 android:id="@+id/p1"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec magna sapien, tincidunt eget lectus nec, ullamcorper viverra diam. Integer elementum risus leo, eu molestie odio efficitur et. Phasellus vitae volutpat felis, sollicitudin pharetra nunc. Aliquam convallis lectus quis mauris vulputate, id molestie metus ultrices. Vestibulum quis est diam. Suspendisse posuere." >
+                android:text="@string/horizontalusmatomumaspa" >
             </TextView>
             <TextView
                 android:id="@+id/reiksme10"
@@ -140,179 +140,8 @@
                 android:id="@+id/p1"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec magna sapien, tincidunt eget lectus nec, ullamcorper viverra diam. Integer elementum risus leo, eu molestie odio efficitur et. Phasellus vitae volutpat felis, sollicitudin pharetra nunc. Aliquam convallis lectus quis mauris vulputate, id molestie metus ultrices. Vestibulum quis est diam. Suspendisse posuere." >
+                android:text="@string/easmuorosalygukodaspa" >
             </TextView>
-            <TextView
-                android:id="@+id/reiksme11"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:text="text"
-                android:textStyle="bold">
-            </TextView>
-            <TextView
-                android:id="@+id/p1"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec magna sapien, tincidunt eget lectus nec, ullamcorper viverra diam. Integer elementum risus leo, eu molestie odio efficitur et. Phasellus vitae volutpat felis, sollicitudin pharetra nunc. Aliquam convallis lectus quis mauris vulputate, id molestie metus ultrices. Vestibulum quis est diam. Suspendisse posuere." >
-            </TextView>
-            <TextView
-                android:id="@+id/reiksme12"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:text="text"
-                android:textStyle="bold">
-            </TextView>
-            <TextView
-                android:id="@+id/p1"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec magna sapien, tincidunt eget lectus nec, ullamcorper viverra diam. Integer elementum risus leo, eu molestie odio efficitur et. Phasellus vitae volutpat felis, sollicitudin pharetra nunc. Aliquam convallis lectus quis mauris vulputate, id molestie metus ultrices. Vestibulum quis est diam. Suspendisse posuere." >
-            </TextView>
-            <TextView
-                android:id="@+id/reiksme13"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:text="text"
-                android:textStyle="bold">
-            </TextView>
-            <TextView
-                android:id="@+id/p1"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec magna sapien, tincidunt eget lectus nec, ullamcorper viverra diam. Integer elementum risus leo, eu molestie odio efficitur et. Phasellus vitae volutpat felis, sollicitudin pharetra nunc. Aliquam convallis lectus quis mauris vulputate, id molestie metus ultrices. Vestibulum quis est diam. Suspendisse posuere." >
-            </TextView>
-            <TextView
-                android:id="@+id/reiksme14"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:text="text"
-                android:textStyle="bold">
-            </TextView>
-            <TextView
-                android:id="@+id/p1"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec magna sapien, tincidunt eget lectus nec, ullamcorper viverra diam. Integer elementum risus leo, eu molestie odio efficitur et. Phasellus vitae volutpat felis, sollicitudin pharetra nunc. Aliquam convallis lectus quis mauris vulputate, id molestie metus ultrices. Vestibulum quis est diam. Suspendisse posuere." >
-            </TextView>
-            <TextView
-                android:id="@+id/reiksme15"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:text="text"
-                android:textStyle="bold">
-            </TextView>
-            <TextView
-                android:id="@+id/p1"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec magna sapien, tincidunt eget lectus nec, ullamcorper viverra diam. Integer elementum risus leo, eu molestie odio efficitur et. Phasellus vitae volutpat felis, sollicitudin pharetra nunc. Aliquam convallis lectus quis mauris vulputate, id molestie metus ultrices. Vestibulum quis est diam. Suspendisse posuere." >
-            </TextView>
-            <TextView
-                android:id="@+id/reiksme16"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:text="text"
-                android:textStyle="bold">
-            </TextView>
-            <TextView
-                android:id="@+id/p1"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec magna sapien, tincidunt eget lectus nec, ullamcorper viverra diam. Integer elementum risus leo, eu molestie odio efficitur et. Phasellus vitae volutpat felis, sollicitudin pharetra nunc. Aliquam convallis lectus quis mauris vulputate, id molestie metus ultrices. Vestibulum quis est diam. Suspendisse posuere." >
-            </TextView>
-            <TextView
-                android:id="@+id/reiksme17"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:text="text"
-                android:textStyle="bold">
-            </TextView>
-            <TextView
-                android:id="@+id/p1"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec magna sapien, tincidunt eget lectus nec, ullamcorper viverra diam. Integer elementum risus leo, eu molestie odio efficitur et. Phasellus vitae volutpat felis, sollicitudin pharetra nunc. Aliquam convallis lectus quis mauris vulputate, id molestie metus ultrices. Vestibulum quis est diam. Suspendisse posuere." >
-            </TextView>
-            <TextView
-                android:id="@+id/reiksme18"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:text="text"
-                android:textStyle="bold">
-            </TextView>
-            <TextView
-                android:id="@+id/p1"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec magna sapien, tincidunt eget lectus nec, ullamcorper viverra diam. Integer elementum risus leo, eu molestie odio efficitur et. Phasellus vitae volutpat felis, sollicitudin pharetra nunc. Aliquam convallis lectus quis mauris vulputate, id molestie metus ultrices. Vestibulum quis est diam. Suspendisse posuere." >
-            </TextView>
-            <TextView
-                android:id="@+id/reiksme19"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:text="text"
-                android:textStyle="bold">
-            </TextView>
-            <TextView
-                android:id="@+id/p1"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec magna sapien, tincidunt eget lectus nec, ullamcorper viverra diam. Integer elementum risus leo, eu molestie odio efficitur et. Phasellus vitae volutpat felis, sollicitudin pharetra nunc. Aliquam convallis lectus quis mauris vulputate, id molestie metus ultrices. Vestibulum quis est diam. Suspendisse posuere." >
-            </TextView>
-            <TextView
-                android:id="@+id/reiksme20"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:text="text"
-                android:textStyle="bold">
-            </TextView>
-            <TextView
-                android:id="@+id/p1"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec magna sapien, tincidunt eget lectus nec, ullamcorper viverra diam. Integer elementum risus leo, eu molestie odio efficitur et. Phasellus vitae volutpat felis, sollicitudin pharetra nunc. Aliquam convallis lectus quis mauris vulputate, id molestie metus ultrices. Vestibulum quis est diam. Suspendisse posuere." >
-            </TextView>
-            <TextView
-                android:id="@+id/reiksme21"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:text="text"
-                android:textStyle="bold">
-            </TextView>
-            <TextView
-                android:id="@+id/p1"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec magna sapien, tincidunt eget lectus nec, ullamcorper viverra diam. Integer elementum risus leo, eu molestie odio efficitur et. Phasellus vitae volutpat felis, sollicitudin pharetra nunc. Aliquam convallis lectus quis mauris vulputate, id molestie metus ultrices. Vestibulum quis est diam. Suspendisse posuere." >
-            </TextView>
-            <TextView
-                android:id="@+id/reiksme22"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:text="text"
-                android:textStyle="bold">
-            </TextView>
-            <TextView
-                android:id="@+id/p1"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec magna sapien, tincidunt eget lectus nec, ullamcorper viverra diam. Integer elementum risus leo, eu molestie odio efficitur et. Phasellus vitae volutpat felis, sollicitudin pharetra nunc. Aliquam convallis lectus quis mauris vulputate, id molestie metus ultrices. Vestibulum quis est diam. Suspendisse posuere." >
-            </TextView>
-            <TextView
-                android:id="@+id/reiksme23"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:text="text"
-                android:textStyle="bold">
-            </TextView>
-            <TextView
-                android:id="@+id/p1"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec magna sapien, tincidunt eget lectus nec, ullamcorper viverra diam. Integer elementum risus leo, eu molestie odio efficitur et. Phasellus vitae volutpat felis, sollicitudin pharetra nunc. Aliquam convallis lectus quis mauris vulputate, id molestie metus ultrices. Vestibulum quis est diam. Suspendisse posuere." >
-            </TextView>
-
-
         </LinearLayout>
     </ScrollView>
 </FrameLayout>

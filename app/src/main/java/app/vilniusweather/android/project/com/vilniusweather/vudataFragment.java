@@ -419,7 +419,7 @@ public class vudataFragment extends Fragment {
 
                 data.setText(getString(R.string.tiesiogvums)  + v1.substring(0, v1.length() - 13) + " ");
 
-                t.setText(v6.substring(0,4) + "°C");
+                t.setText(v6.substring(0, v6.length() - 4) + "°C");
 
                 a.setText(getString(R.string.slegis) + " " + v11);
                 b.setText(getString(R.string.vejogreitis) + " " + String.valueOf(Math.round(Double.parseDouble((v3.substring(0, v3.length() - 4))) * 0.514*100.0)/100.0) + " m/s");

@@ -63,7 +63,7 @@ public class vudatapaaiskinimaiFragment extends Fragment {
 
             String newline = System.getProperty("line.separator");
             //rasymas
-            String[] array = new String[23];
+            String[] array = new String[10];
             int index = 0;
 
             String filename = "VilniusWeatherVUEx.txt";
@@ -74,11 +74,8 @@ public class vudatapaaiskinimaiFragment extends Fragment {
             {
                 String string = "11111111" + newline + "22222222" + newline + "33333333"
                         + newline + "44444444" + newline + "55555555" + newline + "66666666"
-                        + newline + "77777777"+ newline + "11111111" + newline + "22222222" + newline + "33333333"
-                        + newline + "44444444" + newline + "55555555" + newline + "66666666"
-                        + newline + "77777777"+ newline + "11111111" + newline + "22222222" + newline + "33333333"
-                        + newline + "44444444" + newline + "55555555" + newline + "66666666"
-                        + newline + "77777777"+ newline + "11111111" + newline + "22222222" + newline;
+                        + newline + "77777777"+ newline + "11111111" + newline + "22222222"
+                        + newline + "33333333" + newline;
 
                 FileOutputStream outputStream;
 
@@ -119,7 +116,7 @@ public class vudatapaaiskinimaiFragment extends Fragment {
             }
 
 
-            for (int i = 0; i <23; i++){
+            for (int i = 0; i <10; i++){
                 Log.v(LOG_TAG, "CHECK IF IT WORKED " + array[i]);
             }
 
@@ -136,47 +133,78 @@ public class vudatapaaiskinimaiFragment extends Fragment {
         g = (TextView)v.findViewById(R.id.reiksme8);
         h = (TextView)v.findViewById(R.id.reiksme9);
         j = (TextView)v.findViewById(R.id.reiksme10);
-        k = (TextView)v.findViewById(R.id.reiksme11);
-        l = (TextView)v.findViewById(R.id.reiksme12);
-        m = (TextView)v.findViewById(R.id.reiksme13);
-        n = (TextView)v.findViewById(R.id.reiksme14);
-        o = (TextView)v.findViewById(R.id.reiksme15);
-        p = (TextView)v.findViewById(R.id.reiksme16);
-        r = (TextView)v.findViewById(R.id.reiksme17);
-        q = (TextView)v.findViewById(R.id.reiksme18);
-        qq = (TextView)v.findViewById(R.id.reiksme19);
-        s = (TextView)v.findViewById(R.id.reiksme20);
-        u = (TextView)v.findViewById(R.id.reiksme21);
-        vv = (TextView)v.findViewById(R.id.reiksme22);
-        w = (TextView)v.findViewById(R.id.reiksme23);
-
-        pav = (ImageView)v.findViewById(R.id.imageView);
 
         //-----
-        t.setText("OWM_timestamp " + array[0]);
+        t.setText("Temperatūra: " + array[0].substring(0, array[0].length() - 4) + "°C");
+        a.setText("Santykinis drėgnis: " + array[1].substring(0, array[1].length() - 2));
+        b.setText("Atmosferos slėgis: " + array[2]);
+        c.setText("Kritulių kiekis per parą: " + array[3]);
+        d.setText("Vėjo greitis: " + String.valueOf(Math.round(Double.parseDouble((array[4].substring(0, array[4].length() - 4))) * 0.514*100.0)/100.0) + " m/s");
 
-        a.setText("OWM_zeno_BP1_5s_Mb " + array[1]);
-        b.setText("Vėjo greitis: " + array[2]);
-        c.setText("Kritulių kiekis per 30s: " + array[3]);
-        d.setText("Krituliu kiekio suma per einamą parą: " + array[4]);
-        e.setText("Momentinė temperatūra: " + array[5]);
-        f.setText("OWM_zeno_BIT" + array[6]);
-        g.setText("Vėjo gūsio stiprumas: " + array[7]);
-        h.setText("Santykinis oro drėgnis: " + array[8]);
-        j.setText("OWM_zeno_V_DC " + array[9]);
-        k.setText("Atmosferos slėgis stoties lygyje: " + array[10]);
-        l.setText("OWM_zeno_Dir_5s " + array[11]);
-        m.setText("Vėjo kryptis: " + array[12]);
-        n.setText("OWM_zeno_ID " + array[13]);
-        o.setText("OWM_cl31_high_sig " + array[14]);
-        p.setText("Vidurinio aukšto debesų pado aukštis: " + array[15]);
-        r.setText("Žemutinio aukšto debesų pado aukštis: " + array[16]);
-        q.setText("OWM_cl31_Range_Ft " + array[17]);
-        qq.setText("OWM_cl31_Detect " + array[18]);
-        s.setText("OWM_cl31_ClH3_30s_Ft " + array[19]);
-        u.setText("OWM_sws200_PP_Mm " + array[20]);
-        vv.setText("Esamų oro sąlygų kodas: " +array[21]);
-        w.setText("Horizontalus matomumas per 1 minutę: " + array[22]);
+        int K = Integer.parseInt(array[5].substring(0, array[5].length() - 4));
+        String kr = "";
+        if ((338 <=K) && (K<=360)) kr="Šiaurės";
+        else if ((K <=22))  kr="Šiaurės";
+        else if ((23 <= K) && (K<=67))  kr="Šiaurės Rytų";
+        else if ((68<=K) && (K<=112)) kr="Rytų";
+        else if ((113<=K) && (K<=157)) kr=" Pietryčių";
+        else if ((158<= K )&& (K<=202)) kr="Pietų";
+        else if ((203<=K) && (K<=247)) kr="Pietvakarių";
+        else if ((248<=K) && (K<=292)) kr="Vakarų";
+        else if ((293<=K) && (K<=337)) kr="Šiaurės Vakarų";
+        e.setText("Vėjo kryptis: " + kr + " (" + array[5] + ")");
+
+        f.setText("Vėjo gūsiai: " + String.valueOf(Math.round(Double.parseDouble((array[6].substring(0, array[6].length() - 4))) * 0.514*100.0)/100.0) + " m/s");
+        g.setText("Debesų pado aukštis: " + array[7].substring(0, array[7].length() - 2) + "m");
+        h.setText("Horizontalus matomumas: " + array[8]);
+
+        String kodas = "";
+        if (array[9].equals("00 WMO")) {
+            kodas=(getString(R.string.giedra));
+        }
+        if (array[9].equals("04 WMO")) {
+            kodas=(getString(R.string.migla));
+        }
+        if (array[9].equals("05 WMO")) {
+            kodas=(getString(R.string.migla1km));
+        }
+        if (array[9].equals("30 WMO")) {
+            kodas=(getString(R.string.Rūkas));
+        }
+        if (array[9].equals("40 WMO")) {
+            kodas=(getString(R.string.krituliai));
+        }
+        if (array[9].equals("51 WMO")) {
+            kodas=(getString(R.string.silpnadulksna));
+        }
+        if (array[9].equals("52 WMO")) {
+            kodas=(getString(R.string.vidutinedulksna));
+        }
+        if (array[9].equals("53 WMO")) {
+            kodas=(getString(R.string.stipridulksna));
+        }
+        if (array[9].equals("61 WMO")) {
+            kodas=(getString(R.string.silpnaslietus));
+        }
+        if (array[9].equals("62 WMO")) {
+            kodas=(getString(R.string.vidutinislietus));
+        }
+        if (array[9].equals("63 WMO")) {
+            kodas=(getString(R.string.stipruslietus));
+        }
+        if (array[9].equals("71 WMO")) {
+            kodas=(getString(R.string.silpnassnygis));
+        }
+        if (array[9].equals("72 WMO")) {
+            kodas=getString(R.string.vidutinissnygis);
+        }
+        if (array[9].equals("73 WMO")) {
+            kodas=(getString(R.string.stiprussnygis));
+        }
+        if (array[9].equals("80 WMO")) {
+            kodas=(getString(R.string.liutiniaikrituliai));
+        }
+        j.setText("Esamų oro sąlygų kodas: " + kodas + " (" + array[9] + ")");
         //------
 
         return v;
@@ -189,7 +217,7 @@ public class vudatapaaiskinimaiFragment extends Fragment {
 
     private void updateWeather() {
         FetchWeatherTask weatherTask = new FetchWeatherTask();
-        weatherTask.execute("94043");
+        weatherTask.execute(" ");
     }
 
     @Override
@@ -307,12 +335,10 @@ public class vudatapaaiskinimaiFragment extends Fragment {
             } catch (FileNotFoundException e) {
                 e.printStackTrace();
             }
-            String string = v1 + newline + v2 + newline +v3 + newline +v4 + newline + v5 +
-                    newline +v6 + newline + v7 + newline + v8 + newline +v9 + newline +v10 +
-                    newline + v11 + newline +v12 + newline + v13
-                    + newline +v14 + newline +v21 + newline + v24 +
-                    newline +v25 + newline + v26 + newline +v27 + newline + v29 +
-                    newline + v31 + newline +v33 + newline +v34 + newline;
+            String string = v6 + newline + v9 + newline +v11
+                    + newline +v5 + newline + v3 +
+                    newline +v12 + newline + v8 + newline + v25 + newline +v34
+                    + newline +v33 + newline;
 
             try {
                 fOut.write(string.getBytes());
@@ -427,36 +453,80 @@ public class vudatapaaiskinimaiFragment extends Fragment {
 
         @Override
         protected void onPostExecute(String[] result) {
-            //View v = inflater.inflate(R.layout.fragment_vudata, false);
-
-            //TextView t = (TextView)v.findViewById(R.id.reiksme1);
 
             if (result != null) {
 
-                t.setText("OWM_timestamp " + v1);
+                t.setText("Temperatūra: " + v6.substring(0, v6.length() - 4) + "°C");
+                a.setText("Santykinis drėgnis: " + v9.substring(0, v9.length() - 2));
+                b.setText("Atmosferos slėgis: " + v11);
+                c.setText("Kritulių kiekis per parą: " + v5);
+                d.setText("Vėjo greitis: " + String.valueOf(Math.round(Double.parseDouble((v3.substring(0, v3.length() - 4))) * 0.514*100.0)/100.0) + " m/s");
 
-                a.setText("OWM_zeno_BP1_5s_Mb " + v2);
-                b.setText("Vėjo greitis: " + v3);
-                c.setText("Kritulių kiekis per 30s: " + v4);
-                d.setText("Krituliu kiekio suma per einamą parą: " + v5);
-                e.setText("Momentinė temperatūra: " + v6);
-                f.setText("OWM_zeno_BIT" + v7);
-                g.setText("Vėjo gūsio stiprumas: " + v8);
-                h.setText("Santykinis oro drėgnis: " + v9);
-                j.setText("OWM_zeno_V_DC " + v10);
-                k.setText("Atmosferos slėgis stoties lygyje: " + v11);
-                l.setText("OWM_zeno_Dir_5s " + v12);
-                m.setText("Vėjo kryptis: " + v13);
-                n.setText("OWM_zeno_ID " + v14);
-                o.setText("OWM_cl31_high_sig " + v21);
-                p.setText("Vidurinio aukšto debesų pado aukštis: " + v24);
-                r.setText("Žemutinio aukšto debesų pado aukštis: " + v25);
-                q.setText("OWM_cl31_Range_Ft " + v26);
-                qq.setText("OWM_cl31_Detect " + v27);
-                s.setText("OWM_cl31_ClH3_30s_Ft " + v29);
-                u.setText("OWM_sws200_PP_Mm " + v31);
-                vv.setText("Esamų oro sąlygų kodas: " +v33);
-                w.setText("Horizontalus matomumas per 1 minutę: " + v34);
+                int K = Integer.parseInt(v12.substring(0, v12.length() - 4));
+                String kr = "";
+                if ((338 <=K) && (K<=360)) kr="Šiaurės";
+                else if ((K <=22))  kr="Šiaurės";
+                else if ((23 <= K) && (K<=67))  kr="Šiaurės Rytų";
+                else if ((68<=K) && (K<=112)) kr="Rytų";
+                else if ((113<=K) && (K<=157)) kr=" Pietryčių";
+                else if ((158<= K )&& (K<=202)) kr="Pietų";
+                else if ((203<=K) && (K<=247)) kr="Pietvakarių";
+                else if ((248<=K) && (K<=292)) kr="Vakarų";
+                else if ((293<=K) && (K<=337)) kr="Šiaurės Vakarų";
+                e.setText("Vėjo kryptis: " + kr + " (" + v12 + ")");
+
+                f.setText("Vėjo gūsiai: " + String.valueOf(Math.round(Double.parseDouble((v8.substring(0, v8.length() - 4))) * 0.514*100.0)/100.0) + " m/s");
+                g.setText("Debesų pado aukštis: " + v25.substring(0, v25.length() - 2) + "m");
+                h.setText("Horizontalus matomumas: " + v34);
+
+                String kodas = "";
+                if (v33.equals("00 WMO")) {
+                    kodas=(getString(R.string.giedra));
+                }
+                if (v33.equals("04 WMO")) {
+                    kodas=(getString(R.string.migla));
+                }
+                if (v33.equals("05 WMO")) {
+                    kodas=(getString(R.string.migla1km));
+                }
+                if (v33.equals("30 WMO")) {
+                    kodas=(getString(R.string.Rūkas));
+                }
+                if (v33.equals("40 WMO")) {
+                    kodas=(getString(R.string.krituliai));
+                }
+                if (v33.equals("51 WMO")) {
+                    kodas=(getString(R.string.silpnadulksna));
+                }
+                if (v33.equals("52 WMO")) {
+                    kodas=(getString(R.string.vidutinedulksna));
+                }
+                if (v33.equals("53 WMO")) {
+                    kodas=(getString(R.string.stipridulksna));
+                }
+                if (v33.equals("61 WMO")) {
+                    kodas=(getString(R.string.silpnaslietus));
+                }
+                if (v33.equals("62 WMO")) {
+                    kodas=(getString(R.string.vidutinislietus));
+                }
+                if (v33.equals("63 WMO")) {
+                    kodas=(getString(R.string.stipruslietus));
+                }
+                if (v33.equals("71 WMO")) {
+                    kodas=(getString(R.string.silpnassnygis));
+                }
+                if (v33.equals("72 WMO")) {
+                    kodas=getString(R.string.vidutinissnygis);
+                }
+                if (v33.equals("73 WMO")) {
+                    kodas=(getString(R.string.stiprussnygis));
+                }
+                if (v33.equals("80 WMO")) {
+                    kodas=(getString(R.string.liutiniaikrituliai));
+                }
+                j.setText("Esamų oro sąlygų kodas: " + kodas + " (" + v33 + ")");
+
 
             }
 

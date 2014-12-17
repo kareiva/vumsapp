@@ -51,7 +51,7 @@
     <string name="nerarysio">Nėra Interneto Ryšio</string>
     <string name="ispejimasinterneto">Įspėjimas</string>
     <string name="wireless">Belaidžio Tinklo Nustatymai</string>
-    <string name="notifikacija">Informacija apie orus Vilniuje</string>
+    <string name="notifikacija">Paspauskite sužinoti tikslias oro sąlygas</string>
     <string name="meteoatnaujinta">Orų prognozę suteikia meteo.lt. Atnaujinta: </string>
     <string name="temperatura">Temperatūra: </string>
     <string name="vejogreitis">Vėjo greitis: </string>
@@ -94,6 +94,40 @@
     <string name="stiprussnygis">Stiprus snygis</string>
     <string name="liutiniaikrituliai">Liūtiniai krituliai</string>
     <string name="alpha">(Abėcėlės tvarka)\nIndrė Cibulskaitė - Stilius\nMartynas Raila - Programamuotojas\nPaulius Taujanskas - Pagrindinis Programuotojas\n \nDėkojame:\nLaimonas Januška - Mokslo Darbuotojas\nSimonas Kareiva - Vykdantysis Dėstytojas </string>
+    <string name="temperaturapa">Temperatūra – rodiklis nusakantis oro masės šiltumą ir yra labiausiai žmogaus organizmo juntamas
+        meteorologinis rodiklis. Stotyje oro temperatūra matuojama 2 m. aukštyje, jutiklis patalpintas specialiame narvelyje, apsaugančiame
+        termometrą nuo tiesioginės saulės spindulių, vėjo ar kritulių poveikio.</string>
+    <string name="santykinisorodregnispa">Santykinis drėgnis – santykis tarp oro masėje esančių vandens garų kiekio
+        ir maksimalaus garų kiekio, kuris galėtų būti tos temperatūros oro masėje. Kuo aukštesnė temperatūra, tuo daugiau vandens garų gali būti ore. Todėl
+        kylant temperatūrai oras sausėja (jei oras nepasipildo vandens garais), o temperatūrai krintant – santykinis vandens drėgnis kyla, kol oras tampa prisotintu
+        vandens garais (>98%) - toliau krintant temperatūrai vandens garai esantys oro masėje pradeda kondensuotis – taip susidaro rūkas (prie žemės)
+        ir debesys (aukštesniuose atmosferos sluoksniuose). Oro drėgnumo jutiklis integruotas kartu su oro temperatūros jutikliu 2 m. aukštyje virš žemės paviršiaus.</string>
+    <string name="atmosferosslegistotieslygyjepa">Atmosferos slėgis – tai oro masės stulpo, esančio virš vietovės, svoris.
+        Vidutinis atmosferos slėgis jūros lygyje yra 1013,25 hPa, tai reiškia, kad oras paviršių spaudžia 1,013kg/cm^2 jėga.
+        Dėl slėgių skirtumų erdvėje kyla oro masių judėjimas žemės paviršiaus atžvilgiu, dar vadinamas vėju. Taip pat tam tikrus reiškinius
+        galima atpažinti pagal slėgio kitimą, pvz.: artėjant ciklonui, kuris dažniausiai atneša lietų, debesis, stiprų vėją; šilumą žiemą ir
+        vėsų orą vasarą – slėgis sparčiai krinta, o artėjant anticiklonui, kuris dažniausiai atneša ramų, be debesų orą; žiemą atneša šaltį, o
+        vasarą - šilumą – slėgis sparčiai kyla. </string>
+    <string name="krituliukiekiosumapereinamaparapa">Kritulių kiekis per parą – kritulių kiekis nuo vidurnakčio, parodantis kokio storio vandens
+        sluoksnis susidarytų ant 1 kvadratinio metro žemės ploto, jei jis nesusigertų, nenutekėtų ar neišgaruotų. Krituliai matuojami 0,25 mm
+        tikslumu sveriant surinktą kritulių kiekį kritulmatyje. Kietieji krituliai yra tirpinami
+        kritulių surinkimo kūgyje, tad iškritęs sniego kiekis yra išreiškiamas šlapių kritulių ekvivalentu .</string>
+    <string name="vejogreitispa">Vėjo greitis – tai oro tūrio nueitas kelias
+        žemės atžvilgiu per laiko vienetą, dažniausiai išreiškiamas metrais per
+        sekundę. Vėjas meteorologijos stotyje matuojamas akustiniu anemometru,
+        esančiu 10 metrų aukštyje virš žemės paviršiaus. </string>
+    <string name="vejokryptis">Vėjo kryptis – taško, iš kurio pučia vėjas, azimutas.</string>
+    <string name="vejogusiostiprumaspa">Vėjo gūsiai – momentiniai, stiprūs vėjo greičio padidėjimai.</string>
+    <string name="debesupadoaukstispa">Debesų pado aukštis – atstumas nuo žemės paviršiaus iki apatinės debesų ribos,
+        matuojamas lazeriniu debesomačiu. Maksimalus MS fiksuojamas debesų aukštis – 7500 m.</string>
+    <string name="horizontalusmatomumaspa">Horizontalus matomumas – dar vadinamas meteorologiniu matomumu,
+        nurodantis atstumą, už kurio esantis objektas susilies su
+        fonu. Matomumą riboja atmosferoje esantys vandens garai,
+        kietosios dalelės ar krintantys krituliai. </string>
+    <string name="easmuorosalygukodaspa">Orų sąlygos – pagal meteorologinį matomumą, aplinkos bei kritulių
+        temperatūrą, taip pat jų formą ir greitį orų detektorius
+        VU MS gali nustatyti apylinkėse tvyrančią miglą, rūką, bei
+        įvairius kritulius – dulksną, lietų, liūtį ar snygį bei jų intensyvumą.</string>
 
 
 </resources>
