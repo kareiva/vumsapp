@@ -145,7 +145,7 @@ public class vudataFragment extends Fragment {
         v12 = array[4];
         v33 = array[5];
 //------------------------------------
-        data.setText(getString(R.string.tiesiogvums) + v1.substring(0, v1.length() - 13) + " ");
+        data.setText(getString(R.string.tiesiogvums) + " " + v1.substring(0, v1.length() - 13) + " ");
 
         t.setText(v6.substring(0, v6.length() - 4) + "°C");
 
@@ -154,15 +154,15 @@ public class vudataFragment extends Fragment {
 
         int K = Integer.parseInt(v12.substring(0, v12.length() - 4));
 
-        if ((338 <=K) && (K<=360)) vejas.setImageResource(R.drawable.s);
-        else if ((K <=22))  vejas.setImageResource(R.drawable.s);
-        else if ((23 <= K) && (K<=67))  vejas.setImageResource(R.drawable.sr);
-        else if ((68<=K) && (K<=112)) vejas.setImageResource(R.drawable.r);
-        else if ((113<=K) && (K<=157)) vejas.setImageResource(R.drawable.pr);
-        else if ((158<= K )&& (K<=202)) vejas.setImageResource(R.drawable.p);
-        else if ((203<=K) && (K<=247)) vejas.setImageResource(R.drawable.pv);
-        else if ((248<=K) && (K<=292)) vejas.setImageResource(R.drawable.v);
-        else if ((293<=K) && (K<=337)) vejas.setImageResource(R.drawable.sv);
+        if ((338 <=K) && (K<=360)) vejas.setImageResource(R.drawable.p);
+        else if ((K <=22))  vejas.setImageResource(R.drawable.p);
+        else if ((23 <= K) && (K<=67))  vejas.setImageResource(R.drawable.pv);
+        else if ((68<=K) && (K<=112)) vejas.setImageResource(R.drawable.v);
+        else if ((113<=K) && (K<=157)) vejas.setImageResource(R.drawable.sv);
+        else if ((158<= K )&& (K<=202)) vejas.setImageResource(R.drawable.s);
+        else if ((203<=K) && (K<=247)) vejas.setImageResource(R.drawable.sr);
+        else if ((248<=K) && (K<=292)) vejas.setImageResource(R.drawable.r);
+        else if ((293<=K) && (K<=337)) vejas.setImageResource(R.drawable.pr);
 
         if (v33.equals("00 WMO")) {
             pav.setImageResource(R.drawable.giedra_saule);
@@ -417,7 +417,7 @@ public class vudataFragment extends Fragment {
 
             if (result != null) {
 
-                data.setText(getString(R.string.tiesiogvums)  + v1.substring(0, v1.length() - 13) + " ");
+                data.setText(getString(R.string.tiesiogvums)  + " " + v1.substring(0, v1.length() - 13) + " ");
 
                 t.setText(v6.substring(0, v6.length() - 4) + "°C");
 
@@ -426,15 +426,15 @@ public class vudataFragment extends Fragment {
 
                 int K = Integer.parseInt(v12.substring(0, v12.length() - 4));
 
-                if ((338 <=K) && (K<=360)) vejas.setImageResource(R.drawable.s);
-                else if ((K <=22))  vejas.setImageResource(R.drawable.s);
-                else if ((23 <= K) && (K<=67))  vejas.setImageResource(R.drawable.sr);
-                else if ((68<=K) && (K<=112)) vejas.setImageResource(R.drawable.r);
-                else if ((113<=K) && (K<=157)) vejas.setImageResource(R.drawable.pr);
-                else if ((158<= K )&& (K<=202)) vejas.setImageResource(R.drawable.p);
-                else if ((203<=K) && (K<=247)) vejas.setImageResource(R.drawable.pv);
-                else if ((248<=K) && (K<=292)) vejas.setImageResource(R.drawable.v);
-                else if ((293<=K) && (K<=337)) vejas.setImageResource(R.drawable.sv);
+                if ((338 <=K) && (K<=360)) vejas.setImageResource(R.drawable.p);
+                else if ((K <=22))  vejas.setImageResource(R.drawable.p);
+                else if ((23 <= K) && (K<=67))  vejas.setImageResource(R.drawable.pv);
+                else if ((68<=K) && (K<=112)) vejas.setImageResource(R.drawable.v);
+                else if ((113<=K) && (K<=157)) vejas.setImageResource(R.drawable.sv);
+                else if ((158<= K )&& (K<=202)) vejas.setImageResource(R.drawable.s);
+                else if ((203<=K) && (K<=247)) vejas.setImageResource(R.drawable.sr);
+                else if ((248<=K) && (K<=292)) vejas.setImageResource(R.drawable.r);
+                else if ((293<=K) && (K<=337)) vejas.setImageResource(R.drawable.pr);
 
 //                00 = "";
 //                04 = "Migla";

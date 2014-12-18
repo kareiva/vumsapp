@@ -310,4 +310,19 @@
         android:layout_alignRight="@+id/reiksme22"
         android:layout_alignEnd="@+id/reiksme22" />
 
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView3"
+        android:src="@drawable/meteologo"
+        android:layout_toEndOf="@+id/Day2"
+        android:layout_above="@+id/reiksme1"
+        android:layout_alignRight="@+id/reiksme3"
+        android:layout_alignEnd="@+id/reiksme3"
+        android:layout_marginBottom="25dp"
+        android:layout_marginTop="29dp"
+        android:layout_toRightOf="@+id/Day2"
+        android:layout_marginLeft="179dp"
+        android:layout_below="@+id/textView" />
+
 </RelativeLayout>

@@ -13,6 +13,21 @@
             android:orientation="vertical" >
 
             <TextView
+                android:id="@+id/reiksme0"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="text"
+                android:textStyle="bold">
+            </TextView>
+            <TextView
+                android:id="@+id/reiksme00"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="text"
+                android:textStyle="bold"
+                android:visibility="invisible">
+            </TextView>
+            <TextView
                 android:id="@+id/reiksme1"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"

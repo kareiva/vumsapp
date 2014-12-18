@@ -12,7 +12,6 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageView;
 import android.widget.TextView;
 
 import org.json.JSONArray;
@@ -38,8 +37,7 @@ public class vudatapaaiskinimaiFragment extends Fragment {
 
 
     String v1, v2, v3, v4, v5, v6, v7, v8, v9, v10, v11, v12, v13, v14, v21, v24, v25, v26, v27, v29, v31, v33, v34 = "---";
-    TextView t, a, b, c, d, e, f, g, h, j, k, l, m, n, o , p ,r, q, qq, s, u, vv, w;
-    ImageView pav;
+    TextView t, a, b, c, d, e, f, g, h, j, data;
 
     final String LOG_TAG = vudatapaaiskinimaiFragment.class.getSimpleName();
 
@@ -47,7 +45,6 @@ public class vudatapaaiskinimaiFragment extends Fragment {
     }
     @Override
     public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
-        inflater.inflate(R.menu.vudatapaaiskinimai, menu);
     }
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
@@ -63,19 +60,19 @@ public class vudatapaaiskinimaiFragment extends Fragment {
 
             String newline = System.getProperty("line.separator");
             //rasymas
-            String[] array = new String[10];
+            String[] array = new String[15];
             int index = 0;
 
             String filename = "VilniusWeatherVUEx.txt";
             File file = new File(getActivity().getFilesDir(), filename);
 
             // write data if file dont exists
-            if (!file.exists())
+        if (!file.exists())
             {
                 String string = "11111111" + newline + "22222222" + newline + "33333333"
                         + newline + "44444444" + newline + "55555555" + newline + "66666666"
                         + newline + "77777777"+ newline + "11111111" + newline + "22222222"
-                        + newline + "33333333" + newline;
+                        + newline + "33333333" + newline + "33333333333333333333" + newline;
 
                 FileOutputStream outputStream;
 
@@ -122,7 +119,7 @@ public class vudatapaaiskinimaiFragment extends Fragment {
 
         View v = inflater.inflate(R.layout.fragment_vudatapaaiskinimai, container, false);
 
-
+        data = (TextView)v.findViewById(R.id.reiksme0);
         t = (TextView)v.findViewById(R.id.reiksme1);
         a = (TextView)v.findViewById(R.id.reiksme2);
         b = (TextView)v.findViewById(R.id.reiksme3);
@@ -135,28 +132,28 @@ public class vudatapaaiskinimaiFragment extends Fragment {
         j = (TextView)v.findViewById(R.id.reiksme10);
 
         //-----
-        t.setText("Temperatūra: " + array[0].substring(0, array[0].length() - 4) + "°C");
-        a.setText("Santykinis drėgnis: " + array[1].substring(0, array[1].length() - 2));
-        b.setText("Atmosferos slėgis: " + array[2]);
-        c.setText("Kritulių kiekis per parą: " + array[3]);
-        d.setText("Vėjo greitis: " + String.valueOf(Math.round(Double.parseDouble((array[4].substring(0, array[4].length() - 4))) * 0.514*100.0)/100.0) + " m/s");
+        t.setText(getString(R.string.temperatura) + " " + array[0].substring(0, array[0].length() - 4) + "°C");
+        a.setText(getString(R.string.santykinisdregnis) + ": " + array[1].substring(0, array[1].length() - 2));
+        b.setText(getString(R.string.slegis) + " " + array[2]);
+        c.setText(getString(R.string.krituliai) + " " + array[3]);
+        d.setText(getString(R.string.vejogreitis) + " " + String.valueOf(Math.round(Double.parseDouble((array[4].substring(0, array[4].length() - 4))) * 0.514*100.0)/100.0) + " m/s");
 
         int K = Integer.parseInt(array[5].substring(0, array[5].length() - 4));
         String kr = "";
-        if ((338 <=K) && (K<=360)) kr="Šiaurės";
-        else if ((K <=22))  kr="Šiaurės";
-        else if ((23 <= K) && (K<=67))  kr="Šiaurės Rytų";
-        else if ((68<=K) && (K<=112)) kr="Rytų";
-        else if ((113<=K) && (K<=157)) kr=" Pietryčių";
-        else if ((158<= K )&& (K<=202)) kr="Pietų";
-        else if ((203<=K) && (K<=247)) kr="Pietvakarių";
-        else if ((248<=K) && (K<=292)) kr="Vakarų";
-        else if ((293<=K) && (K<=337)) kr="Šiaurės Vakarų";
-        e.setText("Vėjo kryptis: " + kr + " (" + array[5] + ")");
+        if ((338 <=K) && (K<=360)) kr=getString(R.string.siaures);
+        else if ((K <=22))  kr=getString(R.string.siaures);
+        else if ((23 <= K) && (K<=67))  kr=getString(R.string.siauresrytu);
+        else if ((68<=K) && (K<=112)) kr=getString(R.string.rytu);
+        else if ((113<=K) && (K<=157)) kr=getString(R.string.pietryciu);
+        else if ((158<= K )&& (K<=202)) kr=getString(R.string.pietu);
+        else if ((203<=K) && (K<=247)) kr=getString(R.string.pietvakariu);
+        else if ((248<=K) && (K<=292)) kr=getString(R.string.vakaru);
+        else if ((293<=K) && (K<=337)) kr=getString(R.string.siauresvakaru);
+        e.setText(getString(R.string.vejokryptisx) + ": " + kr + " (" + array[5] + ")");
 
-        f.setText("Vėjo gūsiai: " + String.valueOf(Math.round(Double.parseDouble((array[6].substring(0, array[6].length() - 4))) * 0.514*100.0)/100.0) + " m/s");
-        g.setText("Debesų pado aukštis: " + array[7].substring(0, array[7].length() - 2) + "m");
-        h.setText("Horizontalus matomumas: " + array[8]);
+        f.setText(getString(R.string.vejogusiai) + ": " + String.valueOf(Math.round(Double.parseDouble((array[6].substring(0, array[6].length() - 4))) * 0.514*100.0)/100.0) + " m/s");
+        g.setText(getString(R.string.debesupadoaukstis) + ": " + array[7].substring(0, array[7].length() - 2) + "m");
+        h.setText(getString(R.string.horizontalusmatomumas) + ": " + array[8]);
 
         String kodas = "";
         if (array[9].equals("00 WMO")) {
@@ -204,8 +201,10 @@ public class vudatapaaiskinimaiFragment extends Fragment {
         if (array[9].equals("80 WMO")) {
             kodas=(getString(R.string.liutiniaikrituliai));
         }
-        j.setText("Esamų oro sąlygų kodas: " + kodas + " (" + array[9] + ")");
+        j.setText(getString(R.string.orokodas) + ": " + array[9] + " (" + kodas + ")");
         //------
+
+        data.setText(getString(R.string.tiesiogvums) + " " + array[10].substring(0, array[10].length() - 13) + " ");
 
         return v;
     }
@@ -338,7 +337,7 @@ public class vudatapaaiskinimaiFragment extends Fragment {
             String string = v6 + newline + v9 + newline +v11
                     + newline +v5 + newline + v3 +
                     newline +v12 + newline + v8 + newline + v25 + newline +v34
-                    + newline +v33 + newline;
+                    + newline +v33 + newline + v1 + newline;
 
             try {
                 fOut.write(string.getBytes());
@@ -456,28 +455,28 @@ public class vudatapaaiskinimaiFragment extends Fragment {
 
             if (result != null) {
 
-                t.setText("Temperatūra: " + v6.substring(0, v6.length() - 4) + "°C");
-                a.setText("Santykinis drėgnis: " + v9.substring(0, v9.length() - 2));
-                b.setText("Atmosferos slėgis: " + v11);
-                c.setText("Kritulių kiekis per parą: " + v5);
-                d.setText("Vėjo greitis: " + String.valueOf(Math.round(Double.parseDouble((v3.substring(0, v3.length() - 4))) * 0.514*100.0)/100.0) + " m/s");
+                t.setText(getString(R.string.temperatura) + " " + v6.substring(0, v6.length() - 4) + "°C");
+                a.setText(getString(R.string.santykinisdregnis) + ": " + v9.substring(0, v9.length() - 2));
+                b.setText(getString(R.string.slegis) + " " + v11);
+                c.setText(getString(R.string.krituliai) + " " + v5);
+                d.setText(getString(R.string.vejogreitis) + " " + String.valueOf(Math.round(Double.parseDouble((v3.substring(0, v3.length() - 4))) * 0.514*100.0)/100.0) + " m/s");
 
                 int K = Integer.parseInt(v12.substring(0, v12.length() - 4));
                 String kr = "";
-                if ((338 <=K) && (K<=360)) kr="Šiaurės";
-                else if ((K <=22))  kr="Šiaurės";
-                else if ((23 <= K) && (K<=67))  kr="Šiaurės Rytų";
-                else if ((68<=K) && (K<=112)) kr="Rytų";
-                else if ((113<=K) && (K<=157)) kr=" Pietryčių";
-                else if ((158<= K )&& (K<=202)) kr="Pietų";
-                else if ((203<=K) && (K<=247)) kr="Pietvakarių";
-                else if ((248<=K) && (K<=292)) kr="Vakarų";
-                else if ((293<=K) && (K<=337)) kr="Šiaurės Vakarų";
-                e.setText("Vėjo kryptis: " + kr + " (" + v12 + ")");
+                if ((338 <=K) && (K<=360)) kr=getString(R.string.siaures);
+                else if ((K <=22))  kr=getString(R.string.siaures);
+                else if ((23 <= K) && (K<=67))  kr=getString(R.string.siauresrytu);
+                else if ((68<=K) && (K<=112)) kr=getString(R.string.rytu);
+                else if ((113<=K) && (K<=157)) kr=getString(R.string.pietryciu);
+                else if ((158<= K )&& (K<=202)) kr=getString(R.string.pietu);
+                else if ((203<=K) && (K<=247)) kr=getString(R.string.pietvakariu);
+                else if ((248<=K) && (K<=292)) kr=getString(R.string.vakaru);
+                else if ((293<=K) && (K<=337)) kr=getString(R.string.siauresvakaru);
+                e.setText(getString(R.string.vejokryptisx) + ": " + kr + " (" + v12 + ")");
 
-                f.setText("Vėjo gūsiai: " + String.valueOf(Math.round(Double.parseDouble((v8.substring(0, v8.length() - 4))) * 0.514*100.0)/100.0) + " m/s");
-                g.setText("Debesų pado aukštis: " + v25.substring(0, v25.length() - 2) + "m");
-                h.setText("Horizontalus matomumas: " + v34);
+                f.setText(getString(R.string.vejogusiai) + ": " + String.valueOf(Math.round(Double.parseDouble((v8.substring(0, v8.length() - 4))) * 0.514*100.0)/100.0) + " m/s");
+                g.setText(getString(R.string.debesupadoaukstis) + ": " + v25.substring(0, v25.length() - 2) + "m");
+                h.setText(getString(R.string.horizontalusmatomumas)+ ": " + v34);
 
                 String kodas = "";
                 if (v33.equals("00 WMO")) {
@@ -525,8 +524,9 @@ public class vudatapaaiskinimaiFragment extends Fragment {
                 if (v33.equals("80 WMO")) {
                     kodas=(getString(R.string.liutiniaikrituliai));
                 }
-                j.setText("Esamų oro sąlygų kodas: " + kodas + " (" + v33 + ")");
+                j.setText(getString(R.string.orokodas) + ": " + v33 + " (" + kodas + ")");
 
+                data.setText(getString(R.string.tiesiogvums) + " " + v1.substring(0, v1.length() - 13) + " ");
 
             }
 

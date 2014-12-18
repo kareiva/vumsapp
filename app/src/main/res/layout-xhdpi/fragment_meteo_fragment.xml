@@ -270,4 +270,17 @@
         android:layout_alignTop="@+id/reiksme55"
         android:layout_alignParentBottom="true" />
 
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView3"
+        android:src="@drawable/meteologo"
+        android:layout_toEndOf="@+id/vejas1"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toRightOf="@+id/vejas1"
+        android:layout_marginLeft="113dp"
+        android:layout_below="@+id/textView"
+        android:layout_above="@+id/reiksme1" />
+
 </RelativeLayout>

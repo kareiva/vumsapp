@@ -249,4 +249,16 @@
         android:layout_alignParentEnd="true"
         android:layout_marginRight="21dp" />
 
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView3"
+        android:src="@drawable/meteologo"
+        android:layout_toEndOf="@+id/vejas2"
+        android:layout_alignTop="@+id/Day1"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toRightOf="@+id/vejas2"
+        android:layout_marginLeft="89dp" />
+
 </RelativeLayout>

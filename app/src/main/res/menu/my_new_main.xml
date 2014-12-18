@@ -3,6 +3,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:context="app.sunshine.android.example.com.sunshine.MyNewMain" >
 
+    <ImageView
+        android:id="@+id/meteologo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="false"
+        android:focusable="false"
+        android:longClickable="false"
+        android:src="@drawable/meteologo" />
+
     <item android:id="@+id/action_map"
         android:title="@string/action_map"
         android:orderInCategory="3"

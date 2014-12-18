@@ -93,7 +93,7 @@
     <string name="vidutinissnygis">Vidutinis snygis</string>
     <string name="stiprussnygis">Stiprus snygis</string>
     <string name="liutiniaikrituliai">Liūtiniai krituliai</string>
-    <string name="alpha">(Abėcėlės tvarka)\nIndrė Cibulskaitė - Stilius\nMartynas Raila - Programamuotojas\nPaulius Taujanskas - Pagrindinis Programuotojas\n \nDėkojame:\nLaimonas Januška - Mokslo Darbuotojas\nSimonas Kareiva - Vykdantysis Dėstytojas </string>
+    <string name="alpha">(Abėcėlės tvarka)\nIndrė Cibulskaitė - Stilius\nMartynas Raila - Programuotojas\nPaulius Taujanskas - Pagrindinis Programuotojas\n \nDėkojame:\nLaimonas Januška - Mokslo Darbuotojas\nSimonas Kareiva - Vykdantysis Dėstytojas </string>
     <string name="temperaturapa">Temperatūra – rodiklis nusakantis oro masės šiltumą ir yra labiausiai žmogaus organizmo juntamas
         meteorologinis rodiklis. Stotyje oro temperatūra matuojama 2 m. aukštyje, jutiklis patalpintas specialiame narvelyje, apsaugančiame
         termometrą nuo tiesioginės saulės spindulių, vėjo ar kritulių poveikio.</string>
@@ -128,6 +128,21 @@
         temperatūrą, taip pat jų formą ir greitį orų detektorius
         VU MS gali nustatyti apylinkėse tvyrančią miglą, rūką, bei
         įvairius kritulius – dulksną, lietų, liūtį ar snygį bei jų intensyvumą.</string>
+
+    <string name="vejokryptisx">Vėjo kryptis</string>
+    <string name="santykinisdregnis">Relative humidity</string>
+    <string name="horizontalusmatomumas">Horizontalus matomumas</string>
+    <string name="debesupadoaukstis">Debesų pado aukštis</string>
+    <string name="vejogusiai">Vėjo gūsiai</string>
+    <string name="siaures">Šiaurės</string>
+    <string name="siauresrytu">Šiaurės Rytų</string>
+    <string name="rytu">Rytų</string>
+    <string name="pietryciu"> Pietryčių</string>
+    <string name="pietu">Pietų</string>
+    <string name="pietvakariu">Pietvakarių</string>
+    <string name="vakaru">Vakarų</string>
+    <string name="siauresvakaru">Šiaurės Vakarų</string>
+    <string name="orokodas">Esamų oro sąlygų kodas</string>
 
 
 </resources>

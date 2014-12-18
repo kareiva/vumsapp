@@ -174,15 +174,15 @@ public class meteoFragment extends Fragment {
 
         int K = Integer.parseInt(array[2]);
 
-        if ((338 <=K) && (K<=360)) vejas1.setImageResource(R.drawable.s);
-        else if ((K <=22))  vejas1.setImageResource(R.drawable.s);
-        else if ((23 <= K) && (K<=67))  vejas1.setImageResource(R.drawable.sr);
-        else if ((68<=K) && (K<=112)) vejas1.setImageResource(R.drawable.r);
-        else if ((113<=K) && (K<=157)) vejas1.setImageResource(R.drawable.pr);
-        else if ((158<= K )&& (K<=202)) vejas1.setImageResource(R.drawable.p);
-        else if ((203<=K) && (K<=247)) vejas1.setImageResource(R.drawable.pv);
-        else if ((248<=K) && (K<=292)) vejas1.setImageResource(R.drawable.v);
-        else if ((293<=K) && (K<=337)) vejas1.setImageResource(R.drawable.sv);
+        if ((338 <=K) && (K<=360)) vejas1.setImageResource(R.drawable.p);
+        else if ((K <=22))  vejas1.setImageResource(R.drawable.p);
+        else if ((23 <= K) && (K<=67))  vejas1.setImageResource(R.drawable.pv);
+        else if ((68<=K) && (K<=112)) vejas1.setImageResource(R.drawable.v);
+        else if ((113<=K) && (K<=157)) vejas1.setImageResource(R.drawable.sv);
+        else if ((158<= K )&& (K<=202)) vejas1.setImageResource(R.drawable.s);
+        else if ((203<=K) && (K<=247)) vejas1.setImageResource(R.drawable.sr);
+        else if ((248<=K) && (K<=292)) vejas1.setImageResource(R.drawable.r);
+        else if ((293<=K) && (K<=337)) vejas1.setImageResource(R.drawable.pr);
 
         c.setText(getString(R.string.debesuotumas) + " " + array[3] + " %");
 
@@ -742,15 +742,15 @@ public class meteoFragment extends Fragment {
 
                 K = Integer.parseInt(v13);
 
-                if ((338 <=K) && (K<=360)) vejas2.setImageResource(R.drawable.s);
-                else if ((K <=22))  vejas2.setImageResource(R.drawable.s);
-                else if ((23 <= K) && (K<=67))  vejas2.setImageResource(R.drawable.sr);
-                else if ((68<=K) && (K<=112)) vejas2.setImageResource(R.drawable.r);
-                else if ((113<=K) && (K<=157)) vejas2.setImageResource(R.drawable.pr);
-                else if ((158<= K )&& (K<=202)) vejas2.setImageResource(R.drawable.p);
-                else if ((203<=K) && (K<=247)) vejas2.setImageResource(R.drawable.pv);
-                else if ((248<=K) && (K<=292)) vejas2.setImageResource(R.drawable.v);
-                else if ((293<=K) && (K<=337)) vejas2.setImageResource(R.drawable.sv);
+                if ((338 <=K) && (K<=360)) vejas2.setImageResource(R.drawable.p);
+                else if ((K <=22))  vejas2.setImageResource(R.drawable.p);
+                else if ((23 <= K) && (K<=67))  vejas2.setImageResource(R.drawable.pv);
+                else if ((68<=K) && (K<=112)) vejas2.setImageResource(R.drawable.v);
+                else if ((113<=K) && (K<=157)) vejas2.setImageResource(R.drawable.sv);
+                else if ((158<= K )&& (K<=202)) vejas2.setImageResource(R.drawable.s);
+                else if ((203<=K) && (K<=247)) vejas2.setImageResource(R.drawable.sr);
+                else if ((248<=K) && (K<=292)) vejas2.setImageResource(R.drawable.r);
+                else if ((293<=K) && (K<=337)) vejas2.setImageResource(R.drawable.pr);
 
                 tt.setText(getString(R.string.debesuotumas) + " " + v14 + " %");
 

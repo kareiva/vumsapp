@@ -286,4 +286,21 @@
         android:layout_alignLeft="@+id/Day2"
         android:layout_alignStart="@+id/Day2" />
 
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView3"
+        android:src="@drawable/meteologo"
+        android:layout_toEndOf="@+id/vejas1"
+        android:layout_toStartOf="@+id/textView2"
+        android:layout_below="@+id/textView2"
+        android:layout_alignLeft="@+id/reiksme1"
+        android:layout_alignStart="@+id/reiksme1"
+        android:layout_marginLeft="199dp"
+        android:layout_marginTop="23dp"
+        android:layout_above="@+id/reiksme1"
+        android:layout_alignRight="@+id/reiksme1"
+        android:layout_alignEnd="@+id/reiksme1"
+        android:layout_marginBottom="16dp" />
+
 </RelativeLayout>

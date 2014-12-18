@@ -267,4 +267,17 @@
         android:textStyle="bold"
         android:textSize="16dp" />
 
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/meteologo"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/meteologo"
+        android:layout_toEndOf="@+id/vejas1"
+        android:layout_marginLeft="98dp"
+        android:layout_above="@+id/imageView"
+        android:layout_toRightOf="@+id/vejas1" />
+
 </RelativeLayout>
