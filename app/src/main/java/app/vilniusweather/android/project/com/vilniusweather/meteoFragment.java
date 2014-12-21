@@ -29,6 +29,10 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+import java.util.Date;
 
 
 public class meteoFragment extends Fragment {
@@ -120,7 +124,7 @@ public class meteoFragment extends Fragment {
                     + newline + "111111111" + newline +
                     "1111111" + newline + "1111111111" + newline + "111111111" + newline + "1111111111"
                     + newline + "111" + newline +
-                    "1111111111" + newline;
+                    "1994-03-29 16:00" + newline;
 
             FileOutputStream outputStream;
 
@@ -392,7 +396,28 @@ public class meteoFragment extends Fragment {
             ee.setText(getString(R.string.plikledis));
         }
 
-        ff.setText(getString(R.string.meteoatnaujinta) + array[14].substring(0, 10) + " ");
+        //ff.setText(getString(R.string.meteoatnaujinta) + array[14].substring(0, 10) + " ");
+        try {
+            SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd");       // Apsibreziu datos formata
+
+            Calendar c = Calendar.getInstance();
+            String datadabar = df.format(c.getTime());
+            String atn = array[14].substring(0, 10);
+            Date atnData = df.parse(atn);               // Atnaujinimo data Data formatu
+            Date dabar = df.parse(datadabar);           // Siandienos data Data formatu
+            long skirt = (dabar.getTime() - atnData.getTime()) / 1000 / 60 / 60 / 24;
+            if (skirt == 0) {
+                ff.setText(getString(R.string.meteoatnaujinta) + " " +getString(R.string.meteoatnaujintatoday)+ " ");
+            }
+            if (skirt == 1) {
+                ff.setText(getString(R.string.meteoatnaujinta) + " " +skirt+ " " + getString(R.string.meteoatnaujintaday)+ " ");
+            }
+            if (skirt > 1) {
+                ff.setText(getString(R.string.meteoatnaujinta) + " " +skirt+ " " + getString(R.string.meteoatnaujintadays)+ " ");
+            }
+        } catch (ParseException e1) {
+            e1.printStackTrace();
+        }
 
         return v;
     }
@@ -849,8 +874,27 @@ public class meteoFragment extends Fragment {
                     ee.setText(getString(R.string.plikledis));
                 }
 
+                try {
+                    SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd");
 
-                ff.setText(getString(R.string.meteoatnaujinta) + " " + v18.substring(0,10) + " ");
+                    Calendar c = Calendar.getInstance();
+                    String datadabar = df.format(c.getTime());
+                    String atn = v18.substring(0, 10);
+                    Date atnData = df.parse(atn);               // Atnaujinimo data Data formatu
+                    Date dabar = df.parse(datadabar);           // Siandienos data Data formatu
+                    long skirt = (dabar.getTime() - atnData.getTime()) / 1000 / 60 / 60 / 24;
+                    if (skirt == 0) {
+                        ff.setText(getString(R.string.meteoatnaujinta) + " " +getString(R.string.meteoatnaujintatoday)+ " ");
+                    }
+                    if (skirt == 1) {
+                        ff.setText(getString(R.string.meteoatnaujinta) + " " +skirt+ " " + getString(R.string.meteoatnaujintaday)+ " ");
+                    }
+                    if (skirt > 1) {
+                        ff.setText(getString(R.string.meteoatnaujinta) + " " +skirt+ " " + getString(R.string.meteoatnaujintadays)+ " ");
+                    }
+                } catch (ParseException e1) {
+                    e1.printStackTrace();
+                }
 
             }
 

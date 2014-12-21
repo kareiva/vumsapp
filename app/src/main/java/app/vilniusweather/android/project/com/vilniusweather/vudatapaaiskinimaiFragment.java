@@ -38,6 +38,7 @@ public class vudatapaaiskinimaiFragment extends Fragment {
 
     String v1, v2, v3, v4, v5, v6, v7, v8, v9, v10, v11, v12, v13, v14, v21, v24, v25, v26, v27, v29, v31, v33, v34 = "---";
     TextView t, a, b, c, d, e, f, g, h, j, data;
+    int deau, dre;
 
     final String LOG_TAG = vudatapaaiskinimaiFragment.class.getSimpleName();
 
@@ -45,6 +46,7 @@ public class vudatapaaiskinimaiFragment extends Fragment {
     }
     @Override
     public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
+        inflater.inflate(R.menu.vudatapaaiskinimai, menu);
     }
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
@@ -69,7 +71,7 @@ public class vudatapaaiskinimaiFragment extends Fragment {
             // write data if file dont exists
         if (!file.exists())
             {
-                String string = "11111111" + newline + "22222222" + newline + "33333333"
+                String string = "2014-03-29 16:00             " + newline + "22222222" + newline + "33333333"
                         + newline + "44444444" + newline + "55555555" + newline + "66666666"
                         + newline + "77777777"+ newline + "11111111" + newline + "22222222"
                         + newline + "33333333" + newline + "33333333333333333333" + newline;
@@ -137,6 +139,8 @@ public class vudatapaaiskinimaiFragment extends Fragment {
         b.setText(getString(R.string.slegis) + " " + array[2]);
         c.setText(getString(R.string.krituliai) + " " + array[3]);
         d.setText(getString(R.string.vejogreitis) + " " + String.valueOf(Math.round(Double.parseDouble((array[4].substring(0, array[4].length() - 4))) * 0.514*100.0)/100.0) + " m/s");
+        deau = Integer.parseInt(array[7].substring(0, array[7].length() - 4));
+        dre = Integer.parseInt(array[1].substring(0, array[1].length() - 4));
 
         int K = Integer.parseInt(array[5].substring(0, array[5].length() - 4));
         String kr = "";
@@ -149,20 +153,29 @@ public class vudatapaaiskinimaiFragment extends Fragment {
         else if ((203<=K) && (K<=247)) kr=getString(R.string.pietvakariu);
         else if ((248<=K) && (K<=292)) kr=getString(R.string.vakaru);
         else if ((293<=K) && (K<=337)) kr=getString(R.string.siauresvakaru);
-        e.setText(getString(R.string.vejokryptisx) + ": " + kr + " (" + array[5] + ")");
+        e.setText(getString(R.string.vejokryptisx) + ": " + kr + " (" + K + "°)");
 
         f.setText(getString(R.string.vejogusiai) + ": " + String.valueOf(Math.round(Double.parseDouble((array[6].substring(0, array[6].length() - 4))) * 0.514*100.0)/100.0) + " m/s");
-        g.setText(getString(R.string.debesupadoaukstis) + ": " + array[7].substring(0, array[7].length() - 2) + "m");
-        h.setText(getString(R.string.horizontalusmatomumas) + ": " + array[8]);
+        g.setText(getString(R.string.debesupadoaukstis) + ": " + Integer.parseInt(array[7].substring(0, array[7].length() - 3)) + "m");
+        h.setText(getString(R.string.horizontalusmatomumas)+ ": " + Double.parseDouble(array[8].substring(0, array[8].length() - 3)) + " km");
 
         String kodas = "";
-        if (array[9].equals("00 WMO")) {
-            kodas=(getString(R.string.giedra));
+        if ((array[9].equals("00 WMO")) && (deau == 0)) {
+            kodas=" ";
         }
-        if (array[9].equals("04 WMO")) {
+        if ((array[9].equals("00 WMO")) && (deau > 0)) {
+            kodas=(getString(R.string.giedra) );
+        }
+        if ((array[9].equals("04 WMO")) && (dre >= 80)) {
+            kodas=(getString(R.string.rukana));
+        }
+        if ((array[9].equals("04 WMO")) && (dre < 80)) {
             kodas=(getString(R.string.migla));
         }
-        if (array[9].equals("05 WMO")) {
+        if ((array[9].equals("05 WMO")) && (dre >= 80)) {
+            kodas=(getString(R.string.Rūkas));
+        }
+        if ((array[9].equals("05 WMO")) && (dre < 80)){
             kodas=(getString(R.string.migla1km));
         }
         if (array[9].equals("30 WMO")) {
@@ -201,10 +214,10 @@ public class vudatapaaiskinimaiFragment extends Fragment {
         if (array[9].equals("80 WMO")) {
             kodas=(getString(R.string.liutiniaikrituliai));
         }
-        j.setText(getString(R.string.orokodas) + ": " + array[9] + " (" + kodas + ")");
+        j.setText(getString(R.string.orokodas) + ": " + array[9] + " " + kodas);
         //------
 
-        data.setText(getString(R.string.tiesiogvums) + " " + array[10].substring(0, array[10].length() - 13) + " ");
+        data.setText(getString(R.string.meteoatnaujinta) + " " + array[10].substring(0, array[10].length() - 13) + " ");
 
         return v;
     }
@@ -244,7 +257,7 @@ public class vudatapaaiskinimaiFragment extends Fragment {
             final String OWM_zeno_AT_5s_C = "zeno_AT_5s_C";
             final String OWM_zeno_BIT = "zeno_BIT";
             final String OWM_zeno_gust = "zeno_gust";
-            final String OWM_zeno_RH_5s = "zeno_RH_5s";
+            final String OWM_zeno_RH_5s = "zeno_RH_5s";                // Santykinis oro drėgnis
             final String OWM_zeno_V_DC = "zeno_V_DC";
             final String OWM_zeno_BP2_5s_Mb = "zeno_BP2_5s_Mb";
             final String OWM_zeno_Dir_5s = "zeno_Dir_5s";
@@ -252,7 +265,7 @@ public class vudatapaaiskinimaiFragment extends Fragment {
             final String OWM_zeno_ID = "zeno_ID";
             final String OWM_cl31_high_sig = "cl31_high_sig";
             final String OWM_cl31_ClH2_30s_Ft = "cl31_ClH2_30s_Ft";
-            final String OWM_cl31_ClH1_30s_Ft = "cl31_ClH1_30s_Ft";
+            final String OWM_cl31_ClH1_30s_Ft = "cl31_ClH1_30s_Ft";     // Debesu aukstis, Apatinė debesų pado reikšmė
             final String OWM_cl31_Range_Ft = "cl31_Range_Ft";
             final String OWM_cl31_Detect = "cl31_Detect";
             final String OWM_cl31_ClH3_30s_Ft = "cl31_ClH3_30s_Ft";
@@ -263,7 +276,6 @@ public class vudatapaaiskinimaiFragment extends Fragment {
 
             JSONObject forecastJson = new JSONObject(forecastJsonStr);
             JSONArray weatherArray = forecastJson.getJSONArray(OWM_LIST);
-
 
             // Get the JSON object representing the day
             JSONObject dayForecast = weatherArray.getJSONObject(0);
@@ -472,27 +484,36 @@ public class vudatapaaiskinimaiFragment extends Fragment {
                 else if ((203<=K) && (K<=247)) kr=getString(R.string.pietvakariu);
                 else if ((248<=K) && (K<=292)) kr=getString(R.string.vakaru);
                 else if ((293<=K) && (K<=337)) kr=getString(R.string.siauresvakaru);
-                e.setText(getString(R.string.vejokryptisx) + ": " + kr + " (" + v12 + ")");
+                e.setText(getString(R.string.vejokryptisx) + ": " + kr + " (" + K + "°)");
 
                 f.setText(getString(R.string.vejogusiai) + ": " + String.valueOf(Math.round(Double.parseDouble((v8.substring(0, v8.length() - 4))) * 0.514*100.0)/100.0) + " m/s");
-                g.setText(getString(R.string.debesupadoaukstis) + ": " + v25.substring(0, v25.length() - 2) + "m");
-                h.setText(getString(R.string.horizontalusmatomumas)+ ": " + v34);
+                g.setText(getString(R.string.debesupadoaukstis) + ": " + Integer.parseInt(v25.substring(0, v25.length() - 3)) + "m");
+                h.setText(getString(R.string.horizontalusmatomumas)+ ": " + Double.parseDouble(v34.substring(0, v34.length() - 3)) + " km");
 
                 String kodas = "";
-                if (v33.equals("00 WMO")) {
-                    kodas=(getString(R.string.giedra));
+                if ((v33.equals("00 WMO")) && (deau == 0)) {
+                    kodas=(getString(R.string.giedra) );
                 }
-                if (v33.equals("04 WMO")) {
+                if ((v33.equals("00 WMO")) && (deau > 0)) {
+                    kodas="  ";
+                }
+                if ((v33.equals("04 WMO")) && (dre >= 80)) {
+                    kodas=(getString(R.string.rukana));
+                }
+                if ((v33.equals("04 WMO")) && (dre < 80)) {
                     kodas=(getString(R.string.migla));
                 }
-                if (v33.equals("05 WMO")) {
+                if ((v33.equals("05 WMO")) && (dre >= 80)) {
+                    kodas=(getString(R.string.Rūkas));
+                }
+                if ((v33.equals("05 WMO")) && (dre < 80)){
                     kodas=(getString(R.string.migla1km));
                 }
                 if (v33.equals("30 WMO")) {
                     kodas=(getString(R.string.Rūkas));
                 }
                 if (v33.equals("40 WMO")) {
-                    kodas=(getString(R.string.krituliai));
+                    kodas=(getString(R.string.krituliaibe));
                 }
                 if (v33.equals("51 WMO")) {
                     kodas=(getString(R.string.silpnadulksna));
@@ -524,9 +545,9 @@ public class vudatapaaiskinimaiFragment extends Fragment {
                 if (v33.equals("80 WMO")) {
                     kodas=(getString(R.string.liutiniaikrituliai));
                 }
-                j.setText(getString(R.string.orokodas) + ": " + v33 + " (" + kodas + ")");
+                j.setText(getString(R.string.orokodas) + ": " + v33 + " " + kodas);
 
-                data.setText(getString(R.string.tiesiogvums) + " " + v1.substring(0, v1.length() - 13) + " ");
+                data.setText(getString(R.string.meteoatnaujinta) + " " + v1.substring(0, v1.length() - 13) + " ");
 
             }
 

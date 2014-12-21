@@ -10,13 +10,15 @@
         android:textAppearance="?android:attr/textAppearanceSmall"
         android:id="@+id/textView"
         android:layout_alignParentTop="true"
-        android:gravity="right"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
         android:textSize="12dp"
         android:textStyle="bold|italic"
         android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+        android:layout_alignParentEnd="true"
+        android:text="Orų prognozę suteikia meteo.lt. Atnaujinta Šiandien"
+        android:gravity="left"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="18dp" />
 
     <ImageView
         android:layout_width="wrap_content"
@@ -276,11 +278,14 @@
         android:id="@+id/imageView3"
         android:src="@drawable/meteologo"
         android:layout_toEndOf="@+id/vejas1"
+        android:layout_marginLeft="106dp"
+        android:layout_marginTop="13dp"
+        android:layout_alignParentTop="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
-        android:layout_toRightOf="@+id/vejas1"
-        android:layout_marginLeft="113dp"
-        android:layout_below="@+id/textView"
-        android:layout_above="@+id/reiksme1" />
+        android:layout_marginRight="6dp"
+        android:layout_above="@+id/reiksme1"
+        android:layout_marginBottom="3dp"
+        android:layout_toRightOf="@+id/vejas1" />
 
 </RelativeLayout>

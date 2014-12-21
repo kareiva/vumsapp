@@ -53,7 +53,10 @@
     <string name="wireless">WIRELESS SETTINGS</string>
     <!--<string name="notifikacija">Information about the weather in Vilnius</string>-->
     <string name="notifikacija">Click here to see latest weather report</string>
-    <string name="meteoatnaujinta">Weather forecast provided by meteo.lt. Updated: </string>
+    <string name="meteoatnaujinta">Weather forecast provided by meteo.lt. Updated </string>
+    <string name="meteoatnaujintaday">day ago </string>
+    <string name="meteoatnaujintadays">days ago </string>
+    <string name="meteoatnaujintatoday">today </string>
     <string name="temperatura">Temperature: </string>
     <string name="vejogreitis">Wind speed: </string>
     <string name="debesuotumas">Cloudiness: </string>
@@ -84,7 +87,11 @@
     <string name="siandien">Today: </string>
     <string name="ryt">Tomorrow: </string>
     <string name="alpha">(In Alphabetical Order)\nIndrė Cibulskaitė - Style\nMartynas Raila - Programming\nPaulius Taujanskas - Lead Programming\n \nLaimonas Januška - Scientific Worker\nSimonas Kareiva - Executive Lecturer </string>
-    <string name="tiesiogvums">Live data from Vilnius University. Updated: </string>
+    <string name="tiesiogvums">Live data from Vilnius University. Updated </string>
+    <string name="tiesiogvumsmin"> min. ago</string>
+    <string name="tiesiogvumsh"> hrs. ago</string>
+    <string name="tiesiogvumsday"> day ago</string>
+    <string name="tiesiogvumsdays"> days ago</string>
     <string name="migla">Mist </string>
     <string name="migla1km">Mist, visibility less than 1 km</string>
     <string name="silpnadulksna">Light Drizzle</string>
@@ -96,62 +103,16 @@
     <string name="stiprussnygis">Heavy Snow</string>
     <string name="liutiniaikrituliai">Rainfall</string>
     <string name="dekojame">Special thanks to: Laimonas Januška and Simonas Kareiva</string>
-    <string name="temperaturapa">Temperature - indicator describing
-        the warmth of the air mass this is the most perceptible
-         meteorological indicator for human body. Air temperature is
-        measured in 2 m. height, sensor is placed in a special cage, shielding
-         thermometer from direct sunlight, wind and precipitation.</string>
-    <string name="santykinisorodregnispa">Relative humidity - the ratio between
-        the mass of water steam in the air and maximum steam quantity
-        in that
-        . The higher the temperature, the more water steam can be in the air.
-        As temperature rises
-          the air becomes drier, when the temperature is falling - a relative
-        humidity of the water rises, until the air becomes saturated
-         water steam (> 98%) - if temperature keeps falling down, water
-        steam in the air begins to condensate the mass - this produces
-        a mist (near the ground)
-         and the clouds (in the higher layers of the atmosphere). Humidity
-        and temperature sensors are integrated 2 m. above the ground.</string>
-    <string name="atmosferosslegistotieslygyjepa">Atmosferos slėgis –
-        tai oro masės stulpo, esančio virš vietovės, svoris.
-        Vidutinis atmosferos slėgis jūros lygyje yra 1013,25 hPa,
-        tai reiškia, kad oras paviršių spaudžia 1,013kg/cm^2 jėga.
-        Dėl slėgių skirtumų erdvėje kyla oro masių judėjimas žemės
-        paviršiaus atžvilgiu, dar vadinamas vėju. Taip pat tam tikrus
-        reiškinius
-        galima atpažinti pagal slėgio kitimą, pvz.: artėjant ciklonui,
-        kuris dažniausiai atneša lietų, debesis, stiprų vėją; šilumą žiemą ir
-        vėsų orą vasarą – slėgis sparčiai krinta, o artėjant anticiklonui,
-        kuris dažniausiai atneša ramų, be debesų orą; žiemą atneša šaltį, o
-        vasarą - šilumą – slėgis sparčiai kyla. </string>
-    <string name="krituliukiekiosumapereinamaparapa">Rainfall during the day
-         - amount of percipation from midnight, showing how thick is the water
-         layer on one square meter of the area.</string>
-    <string name="vejogreitispa">Wind speed - the distance that a volume f air traveled
-        per unit of time,
-        usually expressed in meters per second.
-        Wind speed in VU MS is measured by acoustic anemometer which is located
-    10 meters above the ground.</string>
-    <string name="vejokryptis">Wind direction – direction from
-        which wind originates.</string>
-    <string name="vejogusiostiprumaspa">Wind gust – sudden and
-        strong wind speed increases.</string>
-    <string name="debesupadoaukstispa">The height of cloud ceiling -
-        the distance between the ground and lower limit of  the cloud, it is measured by the laser.
-        The maximum height that VU MS can capture is 7500 m.
-    </string>
-    <string name="horizontalusmatomumaspa">Horizontal visibility
-         - also known as the meteorological visibility. It
-         indicates the distance at which an object will merge with the background
-        . Visibility is limited by water steam in the atmosphere,
-         solid particles or by falling precipitation.</string>
-    <string name="easmuorosalygukodaspa">Weather conditions
-        - according to the meteorological visibility, precipitation,ambient
-         temperature, as well as their shape and speed weather detector at
-         VU MS can detect the mist, fog, and
-         various precipitations - drizzle, rain, rainstorm or snow
-        and their intensity.</string>
+    <string name="temperaturapa">Temperature - indicator describing the warmth of the air mass this is the most perceptible meteorological indicator for human body. Air temperature is measured in 2 m. height, sensor is placed in a special cage, shielding thermometer from direct sunlight, wind and precipitation.</string>
+    <string name="santykinisorodregnispa">Relative humidity - the ratio between the mass of water steam in the air and maximum steam quantity in that. The higher the temperature, the more water steam can be in the air. As temperature rises the air becomes drier, when the temperature is falling - a relative humidity of the water rises, until the air becomes saturated water steam (> 98%) - if temperature keeps falling down, water steam in the air begins to condensate the mass - this produces a mist (near the ground) and the clouds (in the higher layers of the atmosphere). Humidity nd temperature sensors are integrated 2 m. above the ground.</string>
+    <string name="atmosferosslegistotieslygyjepa">The pressure of an atmosphere is a weight of air mass’ pole which is above the locality. An average pressure of atmosphere at the sea level is 1013,25 hPa, meaning that air is pressing the surface with a 1,013 kg/cm2 force. Because of the difference of pressures in the space, the movement of air masses in respect of surface is ascending, also known as wind. Also some of the phenomenons can be recognized by the change of a pressure, for example when a cyclone is approaching it usually brings rain, clouds and intense wind; heat in the winter and chilly weather in the summer, and the pressure decreases rapidly. And when an anticyclone is approaching  which usually brings calm, cloudless weather; cold in the winter and heat in the summer, the pressure ascends rapidly.</string>
+    <string name="krituliukiekiosumapereinamaparapa">Rainfall during the day - amount of percipation from midnight, showing how thick the water layer on one square meter of the area is.</string>
+    <string name="vejogreitispa">Wind speed - the distance that a volume f air traveled per unit of time, usually expressed in meters per second. Wind speed in VU MS is measured by acoustic anemometer which is located 10 meters above the ground.</string>
+    <string name="vejokryptis">Wind direction – direction from which wind originates. </string>
+    <string name="vejogusiostiprumaspa">Wind gust – sudden and strong wind speed increases.</string>
+    <string name="debesupadoaukstispa">The height of cloud ceiling - the distance between the ground and lower limit of the cloud, it is measured by the laser. The maximum height that VU MS can capture is 7500 m.</string>
+    <string name="horizontalusmatomumaspa">Horizontal visibility - also known as the meteorological visibility. It indicates the distance at which an object will merge with the background. Visibility is limited by water steam in the atmosphere, solid particles or by falling precipitation.</string>
+    <string name="easmuorosalygukodaspa">Weather conditions - according to the meteorological visibility, precipitation,ambient temperature, as well as their shape and speed weather detector at VU MS can detect the mist, fog, and various precipitations - drizzle, rain, rainstorm or snow and their intensity.</string>
 
     <string name="vejokryptisx">Wind direction</string>
     <string name="santykinisdregnis">Relative humidity</string>
@@ -167,4 +128,6 @@
     <string name="vakaru">West</string>
     <string name="siauresvakaru">North West</string>
     <string name="orokodas">Current weather code</string>
+    <string name="rukana">Fog</string>
+    <string name="krituliaibe">Precipation</string>
 </resources>

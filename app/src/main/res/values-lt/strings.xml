@@ -29,7 +29,7 @@
     <string name="title_activity_VUabout">Apie VU stotį</string>
     <string name="title_activity_stoties">About VU meteorological station</string>
     <string name="stotis">Meteorologijos stotis</string>
-    <string name="apie_stoti">Ši modernia orų stotį valdo Vilniaus Universitetas. Stoties įranga pagamino Coastal Environmental Systems Kipp &#38; Zonen</string>
+    <string name="apie_stoti">Šią modernią orų stotį valdo Vilniaus Universitetas. Stoties įrangą pagamino Coastal Environmental Systems Kipp &#38; Zonen</string>
     <string name="koord">Koordinatės\n54° 40′ 58.39″ š. pl.,\n25° 15′ 38.23″ r. ilg.</string>
     <string name="AVJL">Aukštis virš jūros lygio\n128 m</string>
     <string name="adres">Adresas\nM. K. Čiurlionio g. 21/27, Vilnius, LT 03101</string>
@@ -52,7 +52,10 @@
     <string name="ispejimasinterneto">Įspėjimas</string>
     <string name="wireless">Belaidžio Tinklo Nustatymai</string>
     <string name="notifikacija">Paspauskite sužinoti tikslias oro sąlygas</string>
-    <string name="meteoatnaujinta">Orų prognozę suteikia meteo.lt. Atnaujinta: </string>
+    <string name="meteoatnaujinta">Orų prognozę suteikia meteo.lt. Atnaujinta </string>
+    <string name="meteoatnaujintaday">dieną </string>
+    <string name="meteoatnaujintadays">dienas </string>
+    <string name="meteoatnaujintatoday">šiandien </string>
     <string name="temperatura">Temperatūra: </string>
     <string name="vejogreitis">Vėjo greitis: </string>
     <string name="debesuotumas">Debesuotumas: </string>
@@ -82,7 +85,11 @@
     <string name="trumpalaikislietus">Trumpalaikis lietus</string>
     <string name="siandien">Šiandien: </string>
     <string name="ryt">Rytoj: </string>
-    <string name="tiesiogvums">Tiesioginiai duomenys iš Vilniaus Universiteto. Atnaujinta: </string>
+    <string name="tiesiogvums">Tiesioginiai duomenys iš Vilniaus Universiteto. Atnaujinta prieš</string>
+    <string name="tiesiogvumsmin"> min.</string>
+    <string name="tiesiogvumsh"> h.</string>
+    <string name="tiesiogvumsday"> dieną</string>
+    <string name="tiesiogvumsdays"> dienas</string>
     <string name="migla">Migla</string>
     <string name="migla1km">Migla, mažas matomumas</string>
     <string name="silpnadulksna">Silpna dulksna</string>
@@ -103,7 +110,7 @@
         vandens garais (>98%) - toliau krintant temperatūrai vandens garai esantys oro masėje pradeda kondensuotis – taip susidaro rūkas (prie žemės)
         ir debesys (aukštesniuose atmosferos sluoksniuose). Oro drėgnumo jutiklis integruotas kartu su oro temperatūros jutikliu 2 m. aukštyje virš žemės paviršiaus.</string>
     <string name="atmosferosslegistotieslygyjepa">Atmosferos slėgis – tai oro masės stulpo, esančio virš vietovės, svoris.
-        Vidutinis atmosferos slėgis jūros lygyje yra 1013,25 hPa, tai reiškia, kad oras paviršių spaudžia 1,013kg/cm^2 jėga.
+        Vidutinis atmosferos slėgis jūros lygyje yra 1013,25 hPa, tai reiškia, kad oras paviršių spaudžia 1,013 kg/cm&#0178; jėga.
         Dėl slėgių skirtumų erdvėje kyla oro masių judėjimas žemės paviršiaus atžvilgiu, dar vadinamas vėju. Taip pat tam tikrus reiškinius
         galima atpažinti pagal slėgio kitimą, pvz.: artėjant ciklonui, kuris dažniausiai atneša lietų, debesis, stiprų vėją; šilumą žiemą ir
         vėsų orą vasarą – slėgis sparčiai krinta, o artėjant anticiklonui, kuris dažniausiai atneša ramų, be debesų orą; žiemą atneša šaltį, o
@@ -130,7 +137,7 @@
         įvairius kritulius – dulksną, lietų, liūtį ar snygį bei jų intensyvumą.</string>
 
     <string name="vejokryptisx">Vėjo kryptis</string>
-    <string name="santykinisdregnis">Relative humidity</string>
+    <string name="santykinisdregnis">Santykinis drėgnis</string>
     <string name="horizontalusmatomumas">Horizontalus matomumas</string>
     <string name="debesupadoaukstis">Debesų pado aukštis</string>
     <string name="vejogusiai">Vėjo gūsiai</string>
@@ -143,6 +150,8 @@
     <string name="vakaru">Vakarų</string>
     <string name="siauresvakaru">Šiaurės Vakarų</string>
     <string name="orokodas">Esamų oro sąlygų kodas</string>
+    <string name="rukana">Rūkana</string>
+    <string name="krituliaibe">Krituliai</string>
 
 
 </resources>
