@@ -13,3 +13,15 @@ This is a weather app by Vilnius University which displays weather data obtained
 ## Description (en)
 
 This app will keep you up with the weather data from the station at the Faculty of Natural Sciences, Vilnius University. The weather data is refreshed every minute and, in addition to common weather data, the app also displays several advanced weather parameters, with in-depth explanations and references. For your convenience, weather forecast from meteo.lt is also available. The app also provides a bit of technical information about the weather station itself and few more additional functions.
+
+# Programos tipas
+
+Programa
+
+# Veiklų grupė
+
+Orai
+
+# Turinio įvertinimas
+
+Everyone
