@@ -195,7 +195,7 @@ public class meteoFragment extends Fragment {
         e.setText(getString(R.string.krituliai) + " " + array[5] + " mm");
 
         if (array[6].equals("giedra")) {
-            pav.setImageResource(R.drawable.giedra_saule);
+            pav.setImageResource(R.drawable.diena_naktis);
             dd.setText(getString(R.string.giedra));
         }
         if (array[6].equals("mazai_deb")) {
@@ -308,7 +308,7 @@ public class meteoFragment extends Fragment {
         cc.setText(getString(R.string.krituliai) + " " + array[12] + " mm");
 
         if (array[13].equals("giedra")) {
-            pav2.setImageResource(R.drawable.giedra_saule);
+            pav2.setImageResource(R.drawable.diena_naktis);
             ee.setText(getString(R.string.giedra));
         }
         if (array[13].equals("mazai_deb")) {
@@ -398,22 +398,26 @@ public class meteoFragment extends Fragment {
 
         //ff.setText(getString(R.string.meteoatnaujinta) + array[14].substring(0, 10) + " ");
         try {
-            SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd");       // Apsibreziu datos formata
-
+            SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd HH:mm");       // Apsibreziu datos formata
             Calendar c = Calendar.getInstance();
+
             String datadabar = df.format(c.getTime());
-            String atn = array[14].substring(0, 10);
+            Date dabar = df.parse(datadabar);           // Dabar data Data formatu
+
+            String atn = array[14].substring(0, 16);
             Date atnData = df.parse(atn);               // Atnaujinimo data Data formatu
-            Date dabar = df.parse(datadabar);           // Siandienos data Data formatu
+            atnData.setHours(atnData.getHours() + 3);   // Atnaujinimo data + 4 valandos, dėl laiko formatų skirtumo
+
             long skirt = (dabar.getTime() - atnData.getTime()) / 1000 / 60 / 60 / 24;
+
             if (skirt == 0) {
-                ff.setText(getString(R.string.meteoatnaujinta) + " " +getString(R.string.meteoatnaujintatoday)+ " ");
+                ff.setText(getString(R.string.meteoatnaujintasiandien) + " ");
             }
             if (skirt == 1) {
-                ff.setText(getString(R.string.meteoatnaujinta) + " " +skirt+ " " + getString(R.string.meteoatnaujintaday)+ " ");
+                ff.setText(getString(R.string.meteoatnaujinta) + " " + getString(R.string.meteoatnaujintaday)+ " ");
             }
             if (skirt > 1) {
-                ff.setText(getString(R.string.meteoatnaujinta) + " " +skirt+ " " + getString(R.string.meteoatnaujintadays)+ " ");
+                ff.setText(getString(R.string.meteoatnaujintapries) + " " +skirt+ " " + getString(R.string.meteoatnaujintadays)+ " ");
             }
         } catch (ParseException e1) {
             e1.printStackTrace();
@@ -576,6 +580,7 @@ public class meteoFragment extends Fragment {
 
             try {
                 final String FORECAST_BASE_URL ="http://msapp.vub.lt/meteo.json";
+                        //"https://gist.githubusercontent.com/Paul127/2b728ab0975163fcde7a/raw/57b12b6b621c91bde6941494f58ab751b2f6bdf1/gistfile1.txt";
 
                 Uri builtUri = Uri.parse(FORECAST_BASE_URL).buildUpon()
                         .build();
@@ -671,7 +676,7 @@ public class meteoFragment extends Fragment {
                 e.setText(getString(R.string.krituliai) + " " + v6 + " mm");
 
                 if (v7.equals("giedra")) {
-                    pav.setImageResource(R.drawable.giedra_saule);
+                    pav.setImageResource(R.drawable.diena_naktis);
                     dd.setText(getString(R.string.giedra));
                 }
                 if (v7.equals("mazai_deb")) {
@@ -786,7 +791,7 @@ public class meteoFragment extends Fragment {
 //                pav.setImageResource(R.drawable.ic_launcher);
 
                 if (v17.equals("giedra")) {
-                    pav2.setImageResource(R.drawable.giedra_saule);
+                    pav2.setImageResource(R.drawable.diena_naktis);
                     ee.setText(getString(R.string.giedra));
                 }
                 if (v17.equals("mazai_deb")) {
@@ -875,22 +880,26 @@ public class meteoFragment extends Fragment {
                 }
 
                 try {
-                    SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd");
-
+                    SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd HH:mm");       // Apsibreziu datos formata
                     Calendar c = Calendar.getInstance();
+
                     String datadabar = df.format(c.getTime());
-                    String atn = v18.substring(0, 10);
+                    Date dabar = df.parse(datadabar);           // Dabar data Data formatu
+
+                    String atn = v18.substring(0, 16);
                     Date atnData = df.parse(atn);               // Atnaujinimo data Data formatu
-                    Date dabar = df.parse(datadabar);           // Siandienos data Data formatu
+                    atnData.setHours(atnData.getHours() + 3);   // Atnaujinimo data + 3 valandos, dėl laiko formatų skirtumo
+
                     long skirt = (dabar.getTime() - atnData.getTime()) / 1000 / 60 / 60 / 24;
+
                     if (skirt == 0) {
-                        ff.setText(getString(R.string.meteoatnaujinta) + " " +getString(R.string.meteoatnaujintatoday)+ " ");
+                        ff.setText(getString(R.string.meteoatnaujintasiandien) + " ");
                     }
                     if (skirt == 1) {
-                        ff.setText(getString(R.string.meteoatnaujinta) + " " +skirt+ " " + getString(R.string.meteoatnaujintaday)+ " ");
+                        ff.setText(getString(R.string.meteoatnaujinta) + " " + getString(R.string.meteoatnaujintaday)+ " ");
                     }
                     if (skirt > 1) {
-                        ff.setText(getString(R.string.meteoatnaujinta) + " " +skirt+ " " + getString(R.string.meteoatnaujintadays)+ " ");
+                        ff.setText(getString(R.string.meteoatnaujintapries) + " " +skirt+ " " + getString(R.string.meteoatnaujintadays)+ " ");
                     }
                 } catch (ParseException e1) {
                     e1.printStackTrace();

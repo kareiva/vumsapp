@@ -67,7 +67,7 @@ public class vudataFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         String newline = System.getProperty("line.separator");
         //rasymas
-        String[] array = new String[9];
+        String[] array = new String[10];
         int index = 0;
 
         String filename = "VilniusWeatherVU.txt";
@@ -76,9 +76,10 @@ public class vudataFragment extends Fragment {
         // write data if file dont exists
         if (!file.exists())
         {
-            String string = "2014-03-29 16:00             " + newline + "22222222" + newline + "111111"
+            String string = "2014-03-29 16:002234567891234" + newline +
+                    "11111111" + newline + "22222222" + newline + "111111"
                     + newline + "44444444" + newline + "55555555" + newline + "66666666"
-                    + newline + "77777777"+ newline + "90111111" + newline + "901111" + newline;
+                    + newline + "7777777777"+ newline + "90111111777" + newline + "901111" + newline;
 
             FileOutputStream outputStream;
 
@@ -152,7 +153,7 @@ public class vudataFragment extends Fragment {
         b.setText(getString(R.string.vejogreitis) + " " + String.valueOf(Math.round(Double.parseDouble((v3.substring(0, v3.length() - 4))) * 0.514*100.0)/100.0) + " m/s");
 
         dre = Integer.parseInt(v9.substring(0, v9.length() - 4));
-        deau = Integer.parseInt(v25.substring(0, v25.length() - 4));
+        deau = Integer.parseInt(v25.substring(0, v25.length() - 3));
         int K = Integer.parseInt(v12.substring(0, v12.length() - 4));
 
         if ((338 <=K) && (K<=360)) vejas.setImageResource(R.drawable.p);
@@ -166,7 +167,7 @@ public class vudataFragment extends Fragment {
         else if ((293<=K) && (K<=337)) vejas.setImageResource(R.drawable.pr);
 
         if ((v33.equals("00 WMO")) && (deau == 0)) {
-            pav.setImageResource(R.drawable.giedra_saule);
+            pav.setImageResource(R.drawable.diena_naktis);
             d.setText(getString(R.string.giedra) );
         }
         if ((v33.equals("00 WMO")) && (deau > 0)) {
@@ -239,7 +240,7 @@ public class vudataFragment extends Fragment {
         }
 
         try {
-            DateFormat df = new SimpleDateFormat("yyyy-MM-dd hh:mm");
+            DateFormat df = new SimpleDateFormat("yyyy-MM-dd HH:mm");
             Date dabar = new java.util.Date();
             Date atnaujinta = df.parse(datagal);
             long skirt = ((dabar.getTime() - atnaujinta.getTime()) / 1000 / 60) + 1;
@@ -253,9 +254,9 @@ public class vudataFragment extends Fragment {
             }
             skirt = skirt / 24;             // Gauna dienų skaičių
             if (skirt == 1){
-                data.setText(getString(R.string.tiesiogvums)  + " " + skirt + " " + getString(R.string.tiesiogvumsday)+ " ");
+                data.setText(getString(R.string.tiesiogvumspa)  + " " + getString(R.string.tiesiogvumsday)+ " ");
             }
-            if (skirt >= 1){
+            if (skirt >= 2){
                 data.setText(getString(R.string.tiesiogvums)  + " " + skirt + " " + getString(R.string.tiesiogvumsdays)+ " ");
             }
         } catch (ParseException e) {
@@ -387,6 +388,7 @@ public class vudataFragment extends Fragment {
             try {
                 final String FORECAST_BASE_URL =
                         "http://msapp.vub.lt/weather.json";
+                //"https://gist.githubusercontent.com/Paul127/dc9751d05e73274f6365/raw/4f3bd4f48ff4671300c914737e9d6767cc1bc064/gistfile1.txt";
 
                 Uri builtUri = Uri.parse(FORECAST_BASE_URL).buildUpon()
                         .build();
@@ -461,7 +463,6 @@ public class vudataFragment extends Fragment {
 
                 //data.setText(getString(R.string.tiesiogvums)  + " " + v1.substring(0, v1.length() - 13) + " ");
                 String datagal = v1.substring(0, v1.length() - 13);
-
                 t.setText(v6.substring(0, v6.length() - 4) + "°C");
 
                 a.setText(getString(R.string.slegis) + " " + v11);
@@ -500,7 +501,7 @@ public class vudataFragment extends Fragment {
 
 
                 if ((v33.equals("00 WMO")) && (deau == 0)) {
-                    pav.setImageResource(R.drawable.giedra_saule);
+                    pav.setImageResource(R.drawable.diena_naktis);
                     d.setText(getString(R.string.giedra) );
                 }
                 if ((v33.equals("00 WMO")) && (deau > 0)) {
@@ -573,7 +574,7 @@ public class vudataFragment extends Fragment {
                 }
 
                 try {
-                    DateFormat df = new SimpleDateFormat("yyyy-MM-dd hh:mm");
+                    DateFormat df = new SimpleDateFormat("yyyy-MM-dd HH:mm");
                     Date dabar = new java.util.Date();
                     Date atnaujinta = df.parse(datagal);
                     long skirt = ((dabar.getTime() - atnaujinta.getTime()) / 1000 / 60) + 1;
@@ -587,9 +588,9 @@ public class vudataFragment extends Fragment {
                     }
                     skirt = skirt / 24;             // Gauna dienų skaičių
                     if (skirt == 1){
-                        data.setText(getString(R.string.tiesiogvums)  + " " + skirt + " " + getString(R.string.tiesiogvumsday)+ " ");
+                        data.setText(getString(R.string.tiesiogvumspa)  + " " + getString(R.string.tiesiogvumsday)+ " ");
                     }
-                    if (skirt >= 1){
+                    if (skirt >= 2){
                         data.setText(getString(R.string.tiesiogvums)  + " " + skirt + " " + getString(R.string.tiesiogvumsdays)+ " ");
                     }
                 } catch (ParseException e) {

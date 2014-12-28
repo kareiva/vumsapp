@@ -26,7 +26,7 @@
         android:text="-99,9 OC"
         android:id="@+id/reiksme1"
         android:layout_marginRight="133dp"
-        android:layout_marginTop="171dp"
+        android:layout_marginTop="151dp"
         android:textColor="#ffffffff"
         android:gravity="center"
         android:layout_alignParentRight="true"
@@ -45,7 +45,7 @@
         android:id="@+id/imageView"
         android:src="@drawable/giedra_saule"
         android:layout_toEndOf="@+id/textView4"
-        android:layout_marginBottom="732dp"
+        android:layout_marginBottom="712dp"
         android:layout_marginLeft="153dp"
         android:layout_marginRight="235dp"
         android:layout_alignTop="@+id/reiksme1"
@@ -53,7 +53,8 @@
         android:layout_toStartOf="@+id/reiksme1"
         android:layout_toRightOf="@+id/textView4"
         android:layout_alignRight="@+id/reiksme1"
-        android:layout_alignEnd="@+id/reiksme1" />
+        android:layout_alignEnd="@+id/reiksme1"
+        android:layout_marginTop="20dp" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -71,7 +72,7 @@
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceSmall"
         android:id="@+id/reiksme5"
-        android:layout_marginTop="224dp"
+        android:layout_marginTop="244dp"
         android:gravity="center|top"
         android:textSize="40dp"
         android:textStyle="bold"
@@ -111,15 +112,15 @@
         android:id="@+id/reiksme2"
         android:layout_toEndOf="@+id/textView4"
         android:layout_marginLeft="87dp"
-        android:layout_marginBottom="215dp"
         android:gravity="center"
-        android:layout_above="@+id/buttonExtended"
         android:layout_toRightOf="@+id/textView4"
         android:layout_alignRight="@+id/reiksme1"
         android:layout_alignEnd="@+id/reiksme1"
         android:layout_alignTop="@+id/reiksme5"
-        android:layout_marginTop="267dp"
-        android:textSize="45dp" />
+        android:layout_marginTop="320dp"
+        android:textSize="45dp"
+        android:layout_above="@+id/reiksme3"
+        android:layout_marginBottom="64dp" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -152,6 +153,6 @@
         android:layout_alignTop="@+id/reiksme2"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginTop="134dp" />
+        android:layout_marginTop="100dp" />
 
 </RelativeLayout>

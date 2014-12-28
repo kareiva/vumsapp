@@ -52,9 +52,11 @@
     <string name="ispejimasinterneto">WARNING</string>
     <string name="wireless">WIRELESS SETTINGS</string>
     <!--<string name="notifikacija">Information about the weather in Vilnius</string>-->
-    <string name="notifikacija">Click here to see latest weather report</string>
+    <string name="notifikacija">Click here to see the latest weather report</string>
     <string name="meteoatnaujinta">Weather forecast provided by meteo.lt. Updated </string>
-    <string name="meteoatnaujintaday">day ago </string>
+    <string name="meteoatnaujintapries">Weather forecast provided by meteo.lt. Updated </string>
+    <string name="meteoatnaujintaday">yesterday</string>
+    <string name="meteoatnaujintasiandien">Weather forecast provided by meteo.lt. Updated today</string>
     <string name="meteoatnaujintadays">days ago </string>
     <string name="meteoatnaujintatoday">today </string>
     <string name="temperatura">Temperature: </string>
@@ -88,9 +90,10 @@
     <string name="ryt">Tomorrow: </string>
     <string name="alpha">(In Alphabetical Order)\nIndrė Cibulskaitė - Style\nMartynas Raila - Programming\nPaulius Taujanskas - Lead Programming\n \nLaimonas Januška - Scientific Worker\nSimonas Kareiva - Executive Lecturer </string>
     <string name="tiesiogvums">Live data from Vilnius University. Updated </string>
+    <string name="tiesiogvumspa">Live data from Vilnius University. Updated </string>
     <string name="tiesiogvumsmin"> min. ago</string>
     <string name="tiesiogvumsh"> hrs. ago</string>
-    <string name="tiesiogvumsday"> day ago</string>
+    <string name="tiesiogvumsday"> yesterday</string>
     <string name="tiesiogvumsdays"> days ago</string>
     <string name="migla">Mist </string>
     <string name="migla1km">Mist, visibility less than 1 km</string>

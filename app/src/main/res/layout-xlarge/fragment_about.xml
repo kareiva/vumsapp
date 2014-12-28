@@ -11,7 +11,7 @@
         android:text="@string/apie_tekstas"
         android:id="@+id/textView"
         android:gravity="center_horizontal"
-        android:layout_marginTop="313dp"
+        android:layout_marginTop="353dp"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_marginLeft="43dp"

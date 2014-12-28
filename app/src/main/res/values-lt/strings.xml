@@ -17,7 +17,7 @@
     <string name="action_fresh">Atnaujinti</string>
 
     <!-- Menu label to fetch updated weather info from the server -->
-    <string name="action_refresh" translatable="false">Atnaujinti</string>
+    <string name="action_refresh">Atnaujinti</string>
     <string name="title_activity_detail">Detali informacija</string>
 
     <string name="title_activity_about">Apie</string>
@@ -29,7 +29,7 @@
     <string name="title_activity_VUabout">Apie VU stotį</string>
     <string name="title_activity_stoties">About VU meteorological station</string>
     <string name="stotis">Meteorologijos stotis</string>
-    <string name="apie_stoti">Šią modernią orų stotį valdo Vilniaus Universitetas. Stoties įrangą pagamino Coastal Environmental Systems Kipp &#38; Zonen</string>
+    <string name="apie_stoti">Ši modernia orų stotį valdo Vilniaus Universitetas. Stoties įranga pagamino Coastal Environmental Systems Kipp &#38; Zonen</string>
     <string name="koord">Koordinatės\n54° 40′ 58.39″ š. pl.,\n25° 15′ 38.23″ r. ilg.</string>
     <string name="AVJL">Aukštis virš jūros lygio\n128 m</string>
     <string name="adres">Adresas\nM. K. Čiurlionio g. 21/27, Vilnius, LT 03101</string>
@@ -42,7 +42,7 @@
     <string name="pref_location_label">Vieta</string>
 
     <!-- Key name for storing location in SharedPreferences [CHAR LIMIT=NONE] -->
-    <string name="pref_location_key" translatable="false">Vieta</string>
+    <string name="pref_location_key">Vieta</string>
 
     <!-- Default postal code for location preference [CHAR LIMIT=NONE] -->
     <string name="pref_location_default">Vilnius</string>
@@ -52,9 +52,11 @@
     <string name="ispejimasinterneto">Įspėjimas</string>
     <string name="wireless">Belaidžio Tinklo Nustatymai</string>
     <string name="notifikacija">Paspauskite sužinoti tikslias oro sąlygas</string>
-    <string name="meteoatnaujinta">Orų prognozę suteikia meteo.lt. Atnaujinta </string>
-    <string name="meteoatnaujintaday">dieną </string>
-    <string name="meteoatnaujintadays">dienas </string>
+    <string name="meteoatnaujintasiandien">Orų prognozę suteikia meteo.lt. Atnaujinta šiandien</string>
+    <string name="meteoatnaujinta">Orų prognozę suteikia meteo.lt. Atnaujinta</string>
+    <string name="meteoatnaujintapries">Orų prognozę suteikia meteo.lt. Atnaujinta prieš</string>
+    <string name="meteoatnaujintaday">vakar </string>
+    <string name="meteoatnaujintadays">d. </string>
     <string name="meteoatnaujintatoday">šiandien </string>
     <string name="temperatura">Temperatūra: </string>
     <string name="vejogreitis">Vėjo greitis: </string>
@@ -86,10 +88,11 @@
     <string name="siandien">Šiandien: </string>
     <string name="ryt">Rytoj: </string>
     <string name="tiesiogvums">Tiesioginiai duomenys iš Vilniaus Universiteto. Atnaujinta prieš</string>
+    <string name="tiesiogvumspa">Tiesioginiai duomenys iš Vilniaus Universiteto. Atnaujinta </string>
     <string name="tiesiogvumsmin"> min.</string>
     <string name="tiesiogvumsh"> h.</string>
-    <string name="tiesiogvumsday"> dieną</string>
-    <string name="tiesiogvumsdays"> dienas</string>
+    <string name="tiesiogvumsday"> vakar</string>
+    <string name="tiesiogvumsdays"> d.</string>
     <string name="migla">Migla</string>
     <string name="migla1km">Migla, mažas matomumas</string>
     <string name="silpnadulksna">Silpna dulksna</string>

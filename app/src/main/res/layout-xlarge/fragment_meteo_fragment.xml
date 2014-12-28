@@ -153,7 +153,8 @@
         android:layout_alignTop="@+id/imageView2"
         android:textSize="35dp"
         android:layout_toRightOf="@+id/imageView2"
-        android:layout_alignRight="@+id/reiksme2" />
+        android:layout_alignRight="@+id/reiksme2"
+        android:layout_marginTop="30dp" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -176,11 +177,11 @@
         android:src="@drawable/sv"
         android:layout_below="@+id/reiksme22"
         android:layout_toEndOf="@+id/Day1"
-        android:layout_marginBottom="42dp"
         android:layout_alignLeft="@+id/vejas1"
+        android:layout_alignBottom="@+id/imageView2"
         android:layout_alignRight="@+id/vejas1"
         android:layout_alignEnd="@+id/vejas1"
-        android:layout_alignBottom="@+id/imageView2" />
+        android:layout_marginBottom="35dp" />
 
     <ImageView
         android:layout_width="wrap_content"
@@ -188,12 +189,12 @@
         android:id="@+id/imageView2"
         android:src="@drawable/giedra_saule"
         android:layout_toStartOf="@+id/vejas2"
-        android:layout_marginBottom="173dp"
+        android:layout_marginBottom="143dp"
         android:layout_alignRight="@+id/imageView"
         android:layout_alignEnd="@+id/imageView"
         android:layout_alignLeft="@+id/reiskinys2"
         android:layout_alignStart="@+id/reiskinys2"
-        android:layout_marginTop="29dp"
+        android:layout_marginTop="45dp"
         android:layout_alignTop="@+id/textView2"
         android:layout_alignBottom="@+id/reiskinys2" />
 
@@ -204,7 +205,7 @@
         android:text="Debesuotumas: 100%"
         android:id="@+id/reiksme33"
         android:layout_toEndOf="@+id/imageView2"
-        android:layout_marginTop="69dp"
+        android:layout_marginTop="79dp"
         android:layout_alignTop="@+id/vejas2"
         android:textSize="35dp"
         android:layout_toStartOf="@+id/vejas2"
@@ -245,13 +246,13 @@
         android:textAppearance="?android:attr/textAppearanceSmall"
         android:text="Giedra"
         android:id="@+id/reiskinys2"
-        android:gravity="center|top"
+        android:gravity="center|center_vertical"
         android:layout_alignRight="@+id/reiskinys1"
         android:layout_alignEnd="@+id/reiskinys1"
         android:layout_marginBottom="93dp"
         android:layout_alignLeft="@+id/Day2"
         android:layout_alignStart="@+id/Day2"
-        android:layout_marginTop="241dp"
+        android:layout_marginTop="250dp"
         android:textStyle="bold"
         android:layout_alignParentBottom="true"
         android:textSize="25dp"
@@ -320,9 +321,9 @@
         android:layout_alignRight="@+id/reiksme3"
         android:layout_alignEnd="@+id/reiksme3"
         android:layout_above="@+id/reiksme1"
-        android:layout_marginBottom="16dp"
+        android:layout_marginBottom="40dp"
         android:layout_marginLeft="92dp"
-        android:layout_marginTop="34dp"
+        android:layout_marginTop="-5dp"
         android:layout_below="@+id/textView"
         android:layout_toRightOf="@+id/vejas2" />
 

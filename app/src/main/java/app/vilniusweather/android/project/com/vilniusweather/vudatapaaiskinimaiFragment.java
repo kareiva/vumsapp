@@ -139,7 +139,7 @@ public class vudatapaaiskinimaiFragment extends Fragment {
         b.setText(getString(R.string.slegis) + " " + array[2]);
         c.setText(getString(R.string.krituliai) + " " + array[3]);
         d.setText(getString(R.string.vejogreitis) + " " + String.valueOf(Math.round(Double.parseDouble((array[4].substring(0, array[4].length() - 4))) * 0.514*100.0)/100.0) + " m/s");
-        deau = Integer.parseInt(array[7].substring(0, array[7].length() - 4));
+        deau = Integer.parseInt(array[7].substring(0, array[7].length() - 3));
         dre = Integer.parseInt(array[1].substring(0, array[1].length() - 4));
 
         int K = Integer.parseInt(array[5].substring(0, array[5].length() - 4));
@@ -217,7 +217,7 @@ public class vudatapaaiskinimaiFragment extends Fragment {
         j.setText(getString(R.string.orokodas) + ": " + array[9] + " " + kodas);
         //------
 
-        data.setText(getString(R.string.meteoatnaujinta) + " " + array[10].substring(0, array[10].length() - 13) + " ");
+        data.setText(getString(R.string.tiesiogvumspa) + " " + array[10].substring(0, array[10].length() - 13) + " ");
 
         return v;
     }
@@ -467,6 +467,9 @@ public class vudatapaaiskinimaiFragment extends Fragment {
 
             if (result != null) {
 
+                dre = Integer.parseInt(v9.substring(0, v9.length() - 4));
+                deau = Integer.parseInt(v25.substring(0, v25.length() - 3));
+
                 t.setText(getString(R.string.temperatura) + " " + v6.substring(0, v6.length() - 4) + "°C");
                 a.setText(getString(R.string.santykinisdregnis) + ": " + v9.substring(0, v9.length() - 2));
                 b.setText(getString(R.string.slegis) + " " + v11);
@@ -547,7 +550,7 @@ public class vudatapaaiskinimaiFragment extends Fragment {
                 }
                 j.setText(getString(R.string.orokodas) + ": " + v33 + " " + kodas);
 
-                data.setText(getString(R.string.meteoatnaujinta) + " " + v1.substring(0, v1.length() - 13) + " ");
+                data.setText(getString(R.string.tiesiogvumspa) + " " + v1.substring(0, v1.length() - 13) + " ");
 
             }
 
